@@ -1,0 +1,16 @@
+/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Application/bin/Debug/net8.0/EvalProG2.Application.deps.json
+/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Application/bin/Debug/net8.0/EvalProG2.Application.dll
+/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Application/bin/Debug/net8.0/EvalProG2.Application.pdb
+/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Application/bin/Debug/net8.0/EvalProG2.Domain.dll
+/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Application/bin/Debug/net8.0/EvalProG2.Domain.pdb
+/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.csproj.AssemblyReference.cache
+/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.AssemblyInfoInputs.cache
+/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.AssemblyInfo.cs
+/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.csproj.CoreCompileInputs.cache
+/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.sourcelink.json
+/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Application/obj/Debug/net8.0/EvalProG.3B1BA400.Up2Date
+/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.dll
+/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Application/obj/Debug/net8.0/refint/EvalProG2.Application.dll
+/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.pdb
+/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Application/obj/Debug/net8.0/ref/EvalProG2.Application.dll

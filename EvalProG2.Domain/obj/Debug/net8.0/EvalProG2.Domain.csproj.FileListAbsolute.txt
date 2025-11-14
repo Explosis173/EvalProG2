@@ -1,0 +1,12 @@
+/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Domain/bin/Debug/net8.0/EvalProG2.Domain.deps.json
+/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Domain/bin/Debug/net8.0/EvalProG2.Domain.dll
+/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Domain/bin/Debug/net8.0/EvalProG2.Domain.pdb
+/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Domain/obj/Debug/net8.0/EvalProG2.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Domain/obj/Debug/net8.0/EvalProG2.Domain.AssemblyInfoInputs.cache
+/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Domain/obj/Debug/net8.0/EvalProG2.Domain.AssemblyInfo.cs
+/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Domain/obj/Debug/net8.0/EvalProG2.Domain.csproj.CoreCompileInputs.cache
+/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Domain/obj/Debug/net8.0/EvalProG2.Domain.sourcelink.json
+/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Domain/obj/Debug/net8.0/EvalProG2.Domain.dll
+/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Domain/obj/Debug/net8.0/refint/EvalProG2.Domain.dll
+/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Domain/obj/Debug/net8.0/EvalProG2.Domain.pdb
+/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Domain/obj/Debug/net8.0/ref/EvalProG2.Domain.dll
