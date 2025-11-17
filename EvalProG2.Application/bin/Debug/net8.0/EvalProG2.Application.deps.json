@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "EvalProG2.Application/1.0.0": {
+        "dependencies": {
+          "EvalProG2.Domain": "1.0.0"
+        },
+        "runtime": {
+          "EvalProG2.Application.dll": {}
+        }
+      },
+      "EvalProG2.Domain/1.0.0": {
+        "runtime": {
+          "EvalProG2.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EvalProG2.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EvalProG2.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

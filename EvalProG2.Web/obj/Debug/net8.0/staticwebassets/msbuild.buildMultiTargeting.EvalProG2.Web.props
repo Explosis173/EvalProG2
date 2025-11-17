@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/EvalProG2.Web.props" />
+</Project>
