@@ -8,36 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fb66603-1a7c-4593-9682-f33d3904fb8d" name="Changes" comment="Add Application and Infrastructure projects targeting .NET 8.0&#10;&#10;Created EvalProG2.Application and EvalProG2.Infrastructure projects. Referenced EvalProG2.Domain in Application and added EntityFrameworkCore to Infrastructure for database support.">
-      <change afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/Configurations/ExaminerConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.EvalProG2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EvalProG2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalProG2.Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Application/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalProG2.Domain/obj/Debug/net8.0/EvalProG2.Domain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Domain/obj/Debug/net8.0/EvalProG2.Domain.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalProG2.Domain/obj/Debug/net8.0/EvalProG2.Domain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Domain/obj/Debug/net8.0/EvalProG2.Domain.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalProG2.Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Domain/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/Configurations/StoreConfiguration.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/EvalProG2.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/EvalProG2.Infrastructure.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/Debug/net8.0/EvalProG2.Infrastructure.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/Debug/net8.0/EvalProG2.Infrastructure.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/Debug/net8.0/EvalProG2.Infrastructure.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/Debug/net8.0/EvalProG2.Infrastructure.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/Debug/net8.0/EvalProG2.Infrastructure.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/Debug/net8.0/EvalProG2.Infrastructure.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/Debug/net8.0/EvalProG2.Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/Debug/net8.0/EvalProG2.Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/EvalProG2.Infrastructure.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/EvalProG2.Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalProG2.Web/obj/Debug/net8.0/EvalProG2.Web.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Web/obj/Debug/net8.0/EvalProG2.Web.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalProG2.Web/obj/Debug/net8.0/EvalProG2.Web.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Web/obj/Debug/net8.0/EvalProG2.Web.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalProG2.Web/obj/Debug/net8.0/EvalProG2.Web.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Web/obj/Debug/net8.0/EvalProG2.Web.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalProG2.Web/obj/Debug/net8.0/EvalProG2.Web.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Web/obj/Debug/net8.0/EvalProG2.Web.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalProG2.Web/obj/EvalProG2.Web.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Web/obj/EvalProG2.Web.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalProG2.Web/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Web/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalProG2.Web/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Web/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalProG2.Web/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Web/obj/rider.project.restore.info" afterDir="false" />
-    </list>
+    <list default="true" id="5fb66603-1a7c-4593-9682-f33d3904fb8d" name="Changes" comment="Remove StoreConfiguration and add EF Core dependencies&#10;&#10;StoreConfiguration.cs has been removed as it was unused, and several new Entity Framework Core packages (Design, Relational, SqlServer) were added. These updates support advanced EF Core features and better manage database interactions." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,6 +33,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/niklas/RiderProjects/EvalProG2/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EvalProG2.Web/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -140,7 +112,7 @@
       <option name="presentableId" value="Default" />
       <updated>1763127823814</updated>
       <workItem from="1763127824859" duration="122000" />
-      <workItem from="1763128090381" duration="9322000" />
+      <workItem from="1763128090381" duration="9638000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize EvalProG2 .NET 8 project with Swagger setup&#10;&#10;Added a new .NET 8 project &quot;EvalProG2&quot; with initial configurations. Included Swagger for API documentation, set up launch settings, and added basic runtime files. Added required dependencies like Swashbuckle.AspNetCore and project files for development.">
       <option name="closed" value="true" />
@@ -166,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763135395872</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Remove StoreConfiguration and add EF Core dependencies&#10;&#10;StoreConfiguration.cs has been removed as it was unused, and several new Entity Framework Core packages (Design, Relational, SqlServer) were added. These updates support advanced EF Core features and better manage database interactions.">
+      <option name="closed" value="true" />
+      <created>1763368283493</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1763368283493</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +170,7 @@
     <MESSAGE value="Initialize EvalProG2 .NET 8 project with Swagger setup&#10;&#10;Added a new .NET 8 project &quot;EvalProG2&quot; with initial configurations. Included Swagger for API documentation, set up launch settings, and added basic runtime files. Added required dependencies like Swashbuckle.AspNetCore and project files for development." />
     <MESSAGE value="Restructure project to" />
     <MESSAGE value="Add Application and Infrastructure projects targeting .NET 8.0&#10;&#10;Created EvalProG2.Application and EvalProG2.Infrastructure projects. Referenced EvalProG2.Domain in Application and added EntityFrameworkCore to Infrastructure for database support." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Application and Infrastructure projects targeting .NET 8.0&#10;&#10;Created EvalProG2.Application and EvalProG2.Infrastructure projects. Referenced EvalProG2.Domain in Application and added EntityFrameworkCore to Infrastructure for database support." />
+    <MESSAGE value="Remove StoreConfiguration and add EF Core dependencies&#10;&#10;StoreConfiguration.cs has been removed as it was unused, and several new Entity Framework Core packages (Design, Relational, SqlServer) were added. These updates support advanced EF Core features and better manage database interactions." />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove StoreConfiguration and add EF Core dependencies&#10;&#10;StoreConfiguration.cs has been removed as it was unused, and several new Entity Framework Core packages (Design, Relational, SqlServer) were added. These updates support advanced EF Core features and better manage database interactions." />
   </component>
 </project>
