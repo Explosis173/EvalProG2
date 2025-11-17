@@ -1,8 +1,8 @@
 using EvalProG2.Domain.Entities;
 
-namespace EvalProG2.Application.Interfaces.Services;
+namespace EvalProG2.Application.Interfaces.Repositorys;
 
-public interface IExaminerService
+public interface IExaminerRepository
 { 
     Task<List<Examiner>> GetAllAsync();
 

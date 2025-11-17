@@ -8,8 +8,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fb66603-1a7c-4593-9682-f33d3904fb8d" name="Changes" comment="Update assembly informational versions across projects&#10;&#10;Updated the AssemblyInformationalVersionAttribute in multiple project files to reflect the new version hash. This ensures consistency across the infrastructure, application, web, and domain layers. Also updated related nuget info files accordingly.">
+    <list default="true" id="5fb66603-1a7c-4593-9682-f33d3904fb8d" name="Changes" comment="Update version metadata across all project files&#10;&#10;Updated AssemblyInformationalVersion and NuGet info files to reflect the latest build version. These changes ensure consistency across all project components for this build.">
+      <change afterPath="$PROJECT_DIR$/EvalProG2.Application/Interfaces/Repositorys/IExaminerRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/Repositorys/ExaminerRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EvalProG2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EvalProG2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EvalProG2.Application/Interfaces/Services/IExaminerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Application/Interfaces/Services/IExaminerService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EvalProG2.Application/Services/ExaminerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Application/Services/ExaminerService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Application/bin/Debug/net8.0/EvalProG2.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Application/bin/Debug/net8.0/EvalProG2.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Application/bin/Debug/net8.0/EvalProG2.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Application/bin/Debug/net8.0/EvalProG2.Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Application/bin/Debug/net8.0/EvalProG2.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Application/bin/Debug/net8.0/EvalProG2.Domain.dll" afterDir="false" />
@@ -17,11 +21,16 @@
       <change beforePath="$PROJECT_DIR$/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Application/obj/Debug/net8.0/ref/EvalProG2.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Application/obj/Debug/net8.0/ref/EvalProG2.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Application/obj/Debug/net8.0/refint/EvalProG2.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Application/obj/Debug/net8.0/refint/EvalProG2.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EvalProG2.Application/obj/EvalProG2.Application.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Application/obj/EvalProG2.Application.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EvalProG2.Application/obj/EvalProG2.Application.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Application/obj/EvalProG2.Application.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EvalProG2.Application/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Application/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EvalProG2.Application/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Application/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Application/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Domain/bin/Debug/net8.0/EvalProG2.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Domain/bin/Debug/net8.0/EvalProG2.Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Domain/bin/Debug/net8.0/EvalProG2.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Domain/bin/Debug/net8.0/EvalProG2.Domain.pdb" afterDir="false" />
@@ -32,8 +41,12 @@
       <change beforePath="$PROJECT_DIR$/EvalProG2.Domain/obj/Debug/net8.0/EvalProG2.Domain.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Domain/obj/Debug/net8.0/EvalProG2.Domain.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Domain/obj/Debug/net8.0/ref/EvalProG2.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Domain/obj/Debug/net8.0/ref/EvalProG2.Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Domain/obj/Debug/net8.0/refint/EvalProG2.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Domain/obj/Debug/net8.0/refint/EvalProG2.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalProG2.Domain/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Domain/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EvalProG2.Domain/obj/EvalProG2.Domain.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Domain/obj/EvalProG2.Domain.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EvalProG2.Domain/obj/EvalProG2.Domain.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Domain/obj/EvalProG2.Domain.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EvalProG2.Domain/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Domain/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EvalProG2.Domain/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Domain/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Domain/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/AppDbContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/bin/Debug/net8.0/EvalProG2.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/bin/Debug/net8.0/EvalProG2.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/bin/Debug/net8.0/EvalProG2.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/bin/Debug/net8.0/EvalProG2.Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/bin/Debug/net8.0/EvalProG2.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/bin/Debug/net8.0/EvalProG2.Domain.dll" afterDir="false" />
@@ -45,15 +58,19 @@
       <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/Debug/net8.0/EvalProG2.Infrastructure.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/Debug/net8.0/EvalProG2.Infrastructure.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/Debug/net8.0/EvalProG2.Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/Debug/net8.0/EvalProG2.Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/Debug/net8.0/EvalProG2.Infrastructure.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/Debug/net8.0/EvalProG2.Infrastructure.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/Debug/net8.0/EvalProG2.Infrastructure.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/Debug/net8.0/EvalProG2.Infrastructure.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/Debug/net8.0/EvalProG2.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/Debug/net8.0/EvalProG2.Infrastructure.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/Debug/net8.0/EvalProG2.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/Debug/net8.0/EvalProG2.Infrastructure.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/Debug/net8.0/EvalProG2.Infrastructure.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/Debug/net8.0/EvalProG2.Infrastructure.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/Debug/net8.0/ref/EvalProG2.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/Debug/net8.0/ref/EvalProG2.Infrastructure.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/Debug/net8.0/refint/EvalProG2.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/Debug/net8.0/refint/EvalProG2.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/EvalProG2.Infrastructure.csproj.EntityFrameworkCore.targets" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/EvalProG2.Infrastructure.csproj.EntityFrameworkCore.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/EvalProG2.Infrastructure.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/EvalProG2.Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/EvalProG2.Infrastructure.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/EvalProG2.Infrastructure.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalProG2.Web/ClientApp/src/views/HomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Web/ClientApp/src/views/HomeView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalProG2.Web/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Web/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EvalProG2.Web/ApplicationStart/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Web/ApplicationStart/DependencyInjection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EvalProG2.Web/Controllers/ExaminerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Web/Controllers/ExaminerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Web/bin/Debug/net8.0/EvalProG2.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Web/bin/Debug/net8.0/EvalProG2.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Web/bin/Debug/net8.0/EvalProG2.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Web/bin/Debug/net8.0/EvalProG2.Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Web/bin/Debug/net8.0/EvalProG2.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Web/bin/Debug/net8.0/EvalProG2.Domain.dll" afterDir="false" />
@@ -73,6 +90,11 @@
       <change beforePath="$PROJECT_DIR$/EvalProG2.Web/obj/Debug/net8.0/EvalProG2.Web.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Web/obj/Debug/net8.0/EvalProG2.Web.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Web/obj/Debug/net8.0/ref/EvalProG2.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Web/obj/Debug/net8.0/ref/EvalProG2.Web.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Web/obj/Debug/net8.0/refint/EvalProG2.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Web/obj/Debug/net8.0/refint/EvalProG2.Web.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EvalProG2.Web/obj/EvalProG2.Web.csproj.EntityFrameworkCore.targets" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Web/obj/EvalProG2.Web.csproj.EntityFrameworkCore.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EvalProG2.Web/obj/EvalProG2.Web.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Web/obj/EvalProG2.Web.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EvalProG2.Web/obj/EvalProG2.Web.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Web/obj/EvalProG2.Web.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EvalProG2.Web/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Web/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EvalProG2.Web/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Web/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EvalProG2.Web/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/EvalProG2.Web/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,6 +128,12 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///Users/niklas/RiderProjects/EvalProG2/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/niklas/RiderProjects/EvalProG2/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/niklas/RiderProjects/EvalProG2/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/niklas/RiderProjects/EvalProG2/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/niklas/RiderProjects/EvalProG2/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/niklas/RiderProjects/EvalProG2/EvalProG2.Application/obj/Debug/net8.0/EvalProG2.Application.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/niklas/RiderProjects/EvalProG2/EvalProG2.Infrastructure/AppDbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/niklas/RiderProjects/EvalProG2/EvalProG2.Infrastructure/obj/Debug/net8.0/EvalProG2.Infrastructure.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -120,30 +148,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.EvalProG2: http.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Datenbank",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev.executor": "Run",
-    "settings.editor.selected.configurable": "editor.preferences.tabs",
-    "ts.external.directory.path": "/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Web/ClientApp/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.EvalProG2: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.EvalProG2: https.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Datenbank&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Web/ClientApp/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/niklas/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache",
-      "/Users/niklas/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache",
-      "/Users/niklas/Library/Application Support/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
+    ],
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/niklas/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/niklas/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache&quot;,
+      &quot;/Users/niklas/Library/Application Support/Symbols/src&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager" selected="npm.dev">
+}</component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.EvalProG2: https">
     <configuration name="EvalProG2: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/EvalProG2.Web/EvalProG2.Web.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -249,7 +281,23 @@
       <option name="project" value="LOCAL" />
       <updated>1763368698392</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Update AssemblyInformationalVersion and NuGet info files&#10;&#10;Updated the `AssemblyInformationalVersion` attributes across multiple projects to reflect the latest build version. Also updated corresponding `nuget.info` files to align with the changes.">
+      <option name="closed" value="true" />
+      <created>1763370726325</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1763370726325</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Update version metadata across all project files&#10;&#10;Updated AssemblyInformationalVersion and NuGet info files to reflect the latest build version. These changes ensure consistency across all project components for this build.">
+      <option name="closed" value="true" />
+      <created>1763372785972</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1763372785972</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,6 +324,8 @@
     <MESSAGE value="Remove StoreConfiguration and add EF Core dependencies&#10;&#10;StoreConfiguration.cs has been removed as it was unused, and several new Entity Framework Core packages (Design, Relational, SqlServer) were added. These updates support advanced EF Core features and better manage database interactions." />
     <MESSAGE value="Remove StoreConfiguration and add EF Core dependencies&#10;&#10;StoreConfiguration.cs was removed as it was unused. Added EF Core packages (Design, Relational, SqlServer) to enable advanced database capabilities and improve interaction management. Updated project metadata accordingly." />
     <MESSAGE value="Update assembly informational versions across projects&#10;&#10;Updated the AssemblyInformationalVersionAttribute in multiple project files to reflect the new version hash. This ensures consistency across the infrastructure, application, web, and domain layers. Also updated related nuget info files accordingly." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update assembly informational versions across projects&#10;&#10;Updated the AssemblyInformationalVersionAttribute in multiple project files to reflect the new version hash. This ensures consistency across the infrastructure, application, web, and domain layers. Also updated related nuget info files accordingly." />
+    <MESSAGE value="Update AssemblyInformationalVersion and NuGet info files&#10;&#10;Updated the `AssemblyInformationalVersion` attributes across multiple projects to reflect the latest build version. Also updated corresponding `nuget.info` files to align with the changes." />
+    <MESSAGE value="Update version metadata across all project files&#10;&#10;Updated AssemblyInformationalVersion and NuGet info files to reflect the latest build version. These changes ensure consistency across all project components for this build." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update version metadata across all project files&#10;&#10;Updated AssemblyInformationalVersion and NuGet info files to reflect the latest build version. These changes ensure consistency across all project components for this build." />
   </component>
 </project>

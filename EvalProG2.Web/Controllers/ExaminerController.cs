@@ -1,4 +1,5 @@
 using EvalProG2.Application.Interfaces.Services;
+using EvalProG2.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EvalProG2.Web.Controllers;
@@ -13,8 +14,24 @@ public class ExaminerController : ControllerBase
     {
         _service = service;
     }
-    
+
     [HttpGet]
     public async Task<IActionResult> GetAll()
-        => Ok(_service.GetAllAsync());
+    {
+        return Ok(await _service.GetAllAsync());
+    }
+    
+    [HttpPost]
+    public async Task<IActionResult> Add([FromQuery]Examiner examiner)
+    {
+        await _service.AddAsync(examiner);
+        return Ok();
+    }
+    
+    [HttpPut]
+    public async Task<IActionResult> Update([FromQuery]Examiner examiner)
+    {
+        await _service.UpdateAsync(examiner);
+        return Ok();
+    }
 }

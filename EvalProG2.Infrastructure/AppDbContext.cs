@@ -13,4 +13,6 @@ public class AppDbContext : DbContext
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
     }
+    
+    public DbSet<Examiner> Examiner { get; set; }
 }
