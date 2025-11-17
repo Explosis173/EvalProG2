@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EvalProG2.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d369205858f41b7624159a3e83cb47a2ad39d49")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b6b46021df0da55e822267647606bb2f1c6368ef")]
 [assembly: System.Reflection.AssemblyProductAttribute("EvalProG2.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EvalProG2.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
