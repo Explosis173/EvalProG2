@@ -9,5 +9,8 @@ public class AppDbContext : DbContext
     {
     }
 
-    public DbSet<Examiner> Examiners => Set<Examiner>();
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
+    }
 }
