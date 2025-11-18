@@ -19,6 +19,22 @@
       <ProjectReference Include="..\EvalProG2.Infrastructure\EvalProG2.Infrastructure.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Compile Remove="obj\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="obj\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="obj\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="obj\**" />
+    </ItemGroup>
+
 
     <!-- Hier definieren wir unser Post-Build Target -->
     <Target Name="PostBuild" AfterTargets="PostBuildEvent">

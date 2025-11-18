@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EvalProG2.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb06d1cc408e204b57fd2066073d4dcd53a06b61")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6859f952af40d40f8350e135d86e7a16556a5eeb")]
 [assembly: System.Reflection.AssemblyProductAttribute("EvalProG2.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EvalProG2.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
