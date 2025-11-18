@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EvalProG2.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb06d1cc408e204b57fd2066073d4dcd53a06b61")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3bbf636890b175dc6af263a6c0390b78a8d99cb")]
 [assembly: System.Reflection.AssemblyProductAttribute("EvalProG2.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EvalProG2.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

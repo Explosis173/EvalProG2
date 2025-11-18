@@ -2,3 +2,8 @@
 /EvalProG2.Infrastructure/obj/
 /EvalProG2.Application/obj/
 /EvalProG2.Domain/obj/
+
+/EvalProG2.Web/bin/
+/EvalProG2.Application/bin/
+/EvalProG2.Domain/bin/
+/EvalProG2.Infrastructure/bin/

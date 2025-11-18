@@ -1,3 +1,4 @@
+using EvalProG2.Application.Interfaces.Repositorys;
 using EvalProG2.Application.Interfaces.Services;
 using EvalProG2.Domain.Entities;
 
@@ -5,17 +6,28 @@ namespace EvalProG2.Application.Services;
 
 public class ExaminerService : IExaminerService
 {
-    public List<Examiner> GetAllAsync()
+    private readonly IExaminerRepository _examinerRepository;
+    public ExaminerService(IExaminerRepository examinerRepository)
     {
-        var exList = new List<Examiner>();
-        exList.Add(new Examiner()
-        {
-            ExamDays = 3,
-            Id = 1,
-            Title = "Dr. Smith",
-            Job = "Professor"
-        });
-        return exList;
+        _examinerRepository = examinerRepository;
+    }
+    public async Task<List<Examiner>> GetAllAsync()
+    {
+        return await _examinerRepository.GetAllAsync();
     }
 
+    public async Task AddAsync(Examiner examiner)
+    {
+        await _examinerRepository.AddAsync(examiner);
+    }
+    
+    public async Task UpdateAsync(Examiner examiner)
+    {
+        await _examinerRepository.UpdateAsync(examiner);
+    }
+
+    public async Task DeleteAsync(int id)
+    {
+        await _examinerRepository.DeleteAsync(id);
+    }
 }
