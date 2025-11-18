@@ -25,4 +25,9 @@ public class ExaminerService : IExaminerService
     {
         await _examinerRepository.UpdateAsync(examiner);
     }
+
+    public async Task DeleteAsync(int id)
+    {
+        await _examinerRepository.DeleteAsync(id);
+    }
 }

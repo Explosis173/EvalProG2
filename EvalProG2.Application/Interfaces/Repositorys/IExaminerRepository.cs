@@ -9,4 +9,6 @@ public interface IExaminerRepository
     Task AddAsync(Examiner examiner);
 
     Task UpdateAsync(Examiner examiner);
+
+    Task DeleteAsync(int id);
 }

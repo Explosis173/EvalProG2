@@ -16,22 +16,61 @@ public class ExaminerController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<IActionResult> GetAll()
+    public async Task<IActionResult> GetAllExaminer()
     {
-        return Ok(await _service.GetAllAsync());
+        try
+        {
+            return Ok(await _service.GetAllAsync());
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return BadRequest("Add Examiner nicht funktioniert");
+        }
     }
     
     [HttpPost]
-    public async Task<IActionResult> Add([FromQuery]Examiner examiner)
+    public async Task<IActionResult> AddExaminer([FromQuery]Examiner examiner)
     {
-        await _service.AddAsync(examiner);
+        try
+        {
+            await _service.AddAsync(examiner);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return BadRequest("Add Examiner nicht funktioniert");
+        }
         return Ok();
     }
     
     [HttpPut]
-    public async Task<IActionResult> Update([FromQuery]Examiner examiner)
+    public async Task<IActionResult> UpdateExaminer([FromQuery]Examiner examiner)
     {
-        await _service.UpdateAsync(examiner);
+        try
+        {
+            await _service.UpdateAsync(examiner);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return BadRequest("Update Examiner nicht funktioniert");
+        }
+        return Ok();
+    }
+
+    [HttpDelete]
+    public async Task<IActionResult> DeleteExaminer([FromQuery] int id)
+    {
+        try
+        {
+            await _service.DeleteAsync(id);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return BadRequest("Delete Examiner nicht funktioniert");
+        }
         return Ok();
     }
 }

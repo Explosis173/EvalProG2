@@ -29,4 +29,16 @@ public class ExaminerRepository : IExaminerRepository
         _context.Examiner.Update(examiner);
         await _context.SaveChangesAsync();
     }
+
+    public async Task DeleteAsync(int id)
+    {
+        var examiner = await _context.Examiner.FindAsync(id);
+        if (examiner == null)
+        {
+            return;
+        }
+
+        _context.Examiner.Remove(examiner);
+        await _context.SaveChangesAsync();
+    }
 }
