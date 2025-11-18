@@ -1,9 +1,63 @@
-<script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+<template>
+        <div class="container"><br><br><br>
+          <h1>Willkommen auf der EvalPro Webseite</h1>
+    <h2>Was wollen Sie tun?</h2>
+
+      <router-link to="/pruefen">
+        <button class="primary">Prüflinge Überprüfen</button>
+      </router-link>
+      <br>
+      <router-link to="/edit">
+        <button class="danger">Prüfling bewerten</button>
+      </router-link>
+      <br>
+      <router-link to="/new">
+        <button class="success">Prüfling hinzufügen</button>
+      </router-link>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Home'
+}
 </script>
 
-<template>
-  <main>
-    <TheWelcome />
-  </main>
-</template>
+<style scoped>
+button {
+  padding: 20px 40px;
+  font-size: 40px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.container {
+  text-align: center;
+}
+
+.primary {
+  margin-top: 60px;
+  background-color: #07396e;
+  color: white;
+
+    border-radius: 20px;
+    border: 4px double #cccccc;
+}
+
+.success {
+  margin-top: 30px;
+  background-color: #07396e;
+  color: white;
+    border-radius: 20px;
+    border: 4px double #cccccc;
+}
+
+.danger {
+  margin-top: 30px;
+  background-color: #07396e;
+  color: white;
+    border-radius: 20px;
+    border: 4px double #cccccc;
+}
+</style>
