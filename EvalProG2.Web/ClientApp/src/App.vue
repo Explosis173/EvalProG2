@@ -1,85 +1,93 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterView } from "vue-router";
+import { ExaminerService } from "@/services/ExaminerService";
+import {ref, onMounted, type Ref} from "vue";
+import type {Examiner} from "@/models/examiner.ts";
+
+const examiners: Ref<Examiner[]> = ref([]);
+
+onMounted(async () => {
+  const res = await ExaminerService.getAll();
+  examiners.value = res;
+});
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+  <div class="layout">
+    <header class="app-header">
+      <div class="brand">
+        <img src="@/images/logo.jpg" class="brand-logo" alt="Logo" />
+        <h1 class="brand-title">EvalPro</h1>
+      </div>
+    </header>
+    <p>{{ examiners }}</p>
+    <div class="layout-body">
+      <main class="app-content">
+        <RouterView />
+      </main>
     </div>
-  </header>
-
-  <RouterView />
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
+.layout {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
+  min-height: 100vh;
 }
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
+.layout-body {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
 }
 
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
+<style scoped>
+/* Premium Sticky Header */
+.app-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+
+  display: flex;
+  align-items: center;
+
+  backdrop-filter: blur(12px);
+  background: rgba(20, 20, 20, 0.55);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+
+  z-index: 999;
 }
 
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+/* Logo + Titel */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
-nav a:first-of-type {
-  border: 0;
+.brand-logo {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+.brand-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+}
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+/* Main Content */
+.app-content {
+  width: 100%;
+  padding: 1.5rem;
+  color: white;
 }
 </style>

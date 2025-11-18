@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EvalProG2.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3bbf636890b175dc6af263a6c0390b78a8d99cb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8523a9afcbbbdf99e592dfa364201a7cf5795b5")]
 [assembly: System.Reflection.AssemblyProductAttribute("EvalProG2.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EvalProG2.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

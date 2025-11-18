@@ -26,18 +26,26 @@
 
     <ItemGroup>
       <Compile Remove="obj\**" />
+      <Compile Remove="ClientApp\dist\**" />
     </ItemGroup>
 
     <ItemGroup>
       <EmbeddedResource Remove="obj\**" />
+      <EmbeddedResource Remove="ClientApp\dist\**" />
     </ItemGroup>
 
     <ItemGroup>
       <Content Remove="obj\**" />
+      <Content Remove="ClientApp\dist\**" />
     </ItemGroup>
 
     <ItemGroup>
       <None Remove="obj\**" />
+      <None Remove="ClientApp\dist\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="ClientApp\src\images\" />
     </ItemGroup>
 
 

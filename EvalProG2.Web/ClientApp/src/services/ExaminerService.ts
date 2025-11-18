@@ -1,31 +1,32 @@
+// src/services/ExaminerService.ts
 import axios from "axios";
+import type {Examiner} from "@/models/examiner.ts";
 
 const api = axios.create({
-  baseURL: "https://localhost:5001/api/Examiner"
+  baseURL: "https://localhost:5001/api",
+  headers: {
+    "Content-Type": "application/json",
+  },
 });
 
-// GET – alle Examiner holen
-export async function getAllExaminer() {
-  return await api.get("/");
-}
+export const ExaminerService = {
+  async getAll(): Promise<Examiner[]> {
+    const res = await api.get("/Examiner");
+    return res.data;
+  },
 
-// POST – Examiner hinzufügen
-export async function addExaminer(examiner) {
-  return await api.post("/", null, {
-    params: examiner
-  });
-}
+  async add(examiner: any) {
+    const res = await api.post("/Examiner", examiner);
+    return res.data;
+  },
 
-// PUT – Examiner updaten
-export async function updateExaminer(examiner) {
-  return await api.put("/", null, {
-    params: examiner
-  });
-}
+  async update(examiner: any) {
+    const res = await api.put("/Examiner", examiner);
+    return res.data;
+  },
 
-// DELETE – Examiner löschen
-export async function deleteExaminer(id) {
-  return await api.delete("/", {
-    params: { id }
-  });
-}
+  async delete(id: number) {
+    const res = await api.delete(`/Examiner/${id}`);
+    return res.data;
+  },
+};
