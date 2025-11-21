@@ -1,46 +1,35 @@
 <template>
-  <div>
-        <div class="container">
-    <h1>Hier wird DB aufgerufen</h1>
+  <div class="container">
 
-    </div>
+          <h1>Prüflinge</h1>
+              <router-link to="/"><button type="button" class="back">Zurück</button></router-link>
+
+
+   
   </div>
 </template>
 
 <script>
-export default {
-  name: 'Home'
-}
+
 </script>
 
-<style scoped>
-button {
-  padding: 20px 40px;
-  font-size: 30px;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-}
+<style>;
 
 .container {
   text-align: center;
 }
-
-.primary {
-  margin-top: 160px;
-  background-color: #07396e;
-  color: white;
-}
-
-.success {
-  margin-top: 30px;
-  background-color: #07396e;
-  color: white;
-}
-
-.danger {
-  margin-top: 30px;
-  background-color: #07396e;
-  color: white;
-}
+  button {
+      padding: 20px 20px;
+      font-size: 25px;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+  }
+      .back {
+    margin-left: 20px;
+      background-color: red;
+      color: white;
+          border-radius: 20px;
+    border: 4px double #cccccc;
+  }
 </style>

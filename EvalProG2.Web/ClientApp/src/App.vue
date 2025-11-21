@@ -1,31 +1,99 @@
 <script setup lang="ts">
 //import { RouterLink, RouterView } from 'vue-router'
 //import HelloWorld from './components/HelloWorld.vue'
+
+import DataTable from 'primevue/datatable';
+import Column from 'primevue/column';
+import Button from 'primevue/button';
+
+
+const items = [
+  {
+    image: 'stadt-regensburg.png',
+    title: 'EvalPro',
+    subtitle: 'Das professionelle Bewertungstool für die mündliche IHK-Prüfung'
+  }
+];
 </script>
 
-<template>
-  <header>
-    <!--<img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />-->
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
 
-      <nav>
-        <!--<RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/index">Index</RouterLink>
-        <RouterLink to="/edit">edit</RouterLink>-->
-      </nav>
-    </div>
-  </header>
 
+<template #content>
+    <head>
+
+    </head>
+    <body>
+        <header>
+            <DataTable :value="items">
+                <Column>
+                <template #body="slotProps">
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <img src="../stadt-regensburg.png" alt="Logo der Stadt Regensburg" class="rgb_logo"/>
+                        <div>
+                            <h1 class="bold">{{ slotProps.data.title }}</h1>
+                            <h2 class="italics">{{ slotProps.data.subtitle }}</h2>
+                        </div>
+                    </div>
+                </template>
+                </Column>
+            </DataTable>
+        </header>
+       <!-- <footer>
+            <section>Impressum goes here</section>
+        </footer>-->
+    </body>
   <RouterView />
 </template>
 
+
+
+
 <style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
+header{
+        display: flex;
+        justify-content: start;
+        color: red;
+        background-color: #EDEDED;
+    }
+    main{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        display:flex;
+        align-self: center;
+    }
+    footer{
+        display: flex;
+        justify-content: end;
+        background-color: #EDEDED;
+    }
+
+    .rgb_logo{
+        width: 20%;
+        height: auto;
+        padding: 0.5cm;
+    }
+
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;              
+    }
+
+    .bold{
+        font-weight: bold
+    }
+    .italics{
+        font-style: italic;
+    }
 
 .logo {
   display: block;

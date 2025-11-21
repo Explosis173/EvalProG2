@@ -1,7 +1,5 @@
 <template>
-        <div class="container"><br><br><br>
-          <h1>Willkommen auf der EvalPro Webseite</h1>
-    <h2>Was wollen Sie tun?</h2>
+        <div class="container">
 
       <router-link to="/pruefen">
         <button class="primary">Prüflinge Überprüfen</button>
@@ -38,7 +36,7 @@ button {
 
 .primary {
   margin-top: 60px;
-  background-color: #07396e;
+  background-color: red;
   color: white;
 
     border-radius: 20px;
@@ -47,7 +45,7 @@ button {
 
 .success {
   margin-top: 30px;
-  background-color: #07396e;
+  background-color: red;
   color: white;
     border-radius: 20px;
     border: 4px double #cccccc;
@@ -55,7 +53,7 @@ button {
 
 .danger {
   margin-top: 30px;
-  background-color: #07396e;
+  background-color: red;
   color: white;
     border-radius: 20px;
     border: 4px double #cccccc;

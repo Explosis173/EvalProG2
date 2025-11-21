@@ -9,7 +9,8 @@
     <router-link to="/Pprojekt"><button type="button" class="PP">Projektpräsentation</button></router-link>
     <router-link to="/Pfach"><button type="button" class="FG">Fachgespräch</button></router-link><br><br><br><br> 
     <router-link to="/Pges"><button type="button" class="GE">Gesamtergebnis</button></router-link>
-    <router-link to="/Pmund"><button type="button" class="MP">Mündliche Prüfung</button></router-link>
+    <router-link to="/Pmund"><button type="button" class="MP">Mündliche Prüfung</button></router-link><br><br><br><br>
+    <router-link to="/"><button type="button" class="back">Zurück</button></router-link>
   </div>
 </template>
 
@@ -36,7 +37,7 @@ export default {
   /* Different button styles */
   .PD {
 /*      margin-top: 30px;*/
-      background-color: #07396e;
+      background-color: red;
       color: white;
           border-radius: 20px;
     border: 4px double #cccccc;
@@ -44,7 +45,7 @@ export default {
 
   .PP {
     margin-left: 20px;
-      background-color: #07396e;
+      background-color: red;
       color: white;
           border-radius: 20px;
     border: 4px double #cccccc;
@@ -52,7 +53,7 @@ export default {
 
   .FG {
     margin-left: 20px;
-      background-color: #07396e;
+      background-color: red;
       color: white;
           border-radius: 20px;
     border: 4px double #cccccc;
@@ -60,7 +61,7 @@ export default {
 
   .GE {
     margin-left: 20px;
-      background-color: #07396e;
+      background-color: red;
       color: white;
           border-radius: 20px;
     border: 4px double #cccccc;
@@ -68,7 +69,15 @@ export default {
 
   .MP {
     margin-left: 20px;
-      background-color: #07396e;
+      background-color: red;
+      color: white;
+          border-radius: 20px;
+    border: 4px double #cccccc;
+  }
+
+    .back {
+    margin-left: 20px;
+      background-color: red;
       color: white;
           border-radius: 20px;
     border: 4px double #cccccc;

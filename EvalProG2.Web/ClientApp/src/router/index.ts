@@ -57,6 +57,11 @@ const router = createRouter({
       name: 'Pmund',
       component: () => import('../views/PmundView.vue'),
     },
+       {
+      path: '/tiri',
+      name: 'tiri',
+      component: () => import('../views/tiriView.vue'),
+    },
   ],
 })
 
