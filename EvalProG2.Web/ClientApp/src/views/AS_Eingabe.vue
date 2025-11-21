@@ -1,13 +1,24 @@
 <script setup lang="ts">
 //---imports---
+import { createApp } from 'vue';
+import App from "../App.vue";
+import PrimeVue from 'primevue/config';
 import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
-import Button from 'primevue/button';
-import 'primereact/resources/primereact.min.css';
-import 'primeicons/primeicons.css';
 
+import  Aura from '@primevue/themes/aura'
+import 'primeicons/primeicons.css';
+import Button from 'primevue/button';
 
 //---variables---
+const app = createApp(App);
+app.use(PrimeVue, {
+    theme: {
+        preset: Aura
+    }
+});
+app.component('Button', Button);
+
 const items = [
   {
     image: 'stadt-regensburg.png',
@@ -34,8 +45,8 @@ const items = [
                     <div style="display: flex; align-items: center; gap: 1rem;">
                         <img src="../assets/stadt-regensburg.png" alt="Logo der Stadt Regensburg" class="rgb_logo"/>
                         <div>
-                            <h1>{{ slotProps.data.title }}</h1>
-                            <h2>{{ slotProps.data.subtitle }}</h2>
+                            <h1 class="bold">{{ slotProps.data.title }}</h1>
+                            <h2 class="italics">{{ slotProps.data.subtitle }}</h2>
                         </div>
                     </div>
                 </template>
@@ -45,10 +56,10 @@ const items = [
         <main>
             <section>
                 <form class="form" id="examinerForm" v-on:submit.prevent="">
-                    <div><label for="title">Titel des Ausschusses: <input id="title" placeholder="Titel"></input></label></div>
-                    <div><label for="job">Zu bewertender Ausbildungsberuf: <input  id="job" placeholder="Ausbildungsberuf"></input></label></div>
-                    <div><label for="examDay">Datum des Ausschusses: <input id="examDay" placeholder="Datum"></input></label></div>
-                    <Button label="Anlegen" icon="pi pi-check" iconPos="right" severity="danger" />
+                    <div><label class="bold" for="title">Titel des Ausschusses: <input id="title" placeholder="Titel"></input></label></div>
+                    <div><label class="bold" for="job">Zu bewertender Ausbildungsberuf: <input  id="job" placeholder="Ausbildungsberuf"></input></label></div>
+                    <div><label class="bold" for="examDay">Datum des Ausschusses: <input id="examDay" placeholder="Datum"></input></label></div>
+                    <Button type="submit" label="Anlegen" icon="pi pi-check" iconPos="right" severity="danger" raised/>
                 </form>
             </section>
         </main>
@@ -78,7 +89,7 @@ const items = [
     }
 
     .rgb_logo{
-        width: 10%;
+        width: 20%;
         height: auto;
         padding: 0.5cm;
     }
@@ -90,21 +101,17 @@ const items = [
         align-items: center;
     }
 
+
     .form {
         display: flex;
         flex-direction: column; 
         gap: 20px;              
     }
 
-
-    h1{
-        font-weight: bold;
+    .bold{
+        font-weight: bold
     }
-    h2{
+    .italics{
         font-style: italic;
-    }
-
-    label{
-        font-weight: bold;
     }
 </style>
