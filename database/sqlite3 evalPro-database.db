@@ -1,0 +1,65 @@
+
+--tabelle Examiner
+CREATE TABLE IF NOT EXISTS examiner(
+    examinerID INTEGER PRIMARY KEY, 
+    title CHAR(50), 
+    job CHAR(30), 
+    examDay DATE
+);
+
+--tabelle candidate
+CREATE TABLE IF NOT EXISTS candidate(
+    candidateID INTEGER PRIMARY KEY,
+    name CHAR(50),
+    company CHAR(30),
+    responsiblePerson CHAR(30),
+    topicOfProject CHAR(100),
+    examiner INTEGER,
+  	FOREIGN KEY (examiner) REFERENCES examiner (examinerID)
+);
+
+--tabelle evaluation
+CREATE TABLE IF NOT EXISTS evaluation(
+    evaluationID INTEGER PRIMARY KEY,
+    examType CHAR(100),
+    criteria CHAR(100),
+    points INTEGER,
+    comment CHAR(1000),
+    exam INTEGER,
+  	FOREIGN KEY (exam) REFERENCES candidate (candidateID)
+);
+
+--tabelle totalResult
+CREATE TABLE IF NOT EXISTS totalResult(
+    gesdErgID INTEGER PRIMARY KEY,
+    examType CHAR(100),
+    totalPoints DECIMAL(5,2),
+    closingComment CHAR (1000),
+    exam INTEGER,
+  	FOREIGN KEY (exam) REFERENCES candidate (candidateID)
+);
+
+--tabelle questions
+CREATE TABLE IF NOT EXISTS questions(
+    questionID INTEGER PRIMARY KEY,
+    questionText CHAR(200)
+);
+
+--tabelle questionsDiscussion
+CREATE TABLE IF NOT EXISTS questionsDiscussion(
+    answeredQID INTEGER PRIMARY KEY,
+    question INTEGER,
+    comment CHAR(1000),
+    exam INTEGER,
+    evaluation INTEGER,
+  	FOREIGN KEY (question) REFERENCES questions (questionID),
+  	FOREIGN KEY (exam) REFERENCES candidate (candidateID),
+  	FOREIGN KEY (evaluation) REFERENCES evaluation (evaluationID)
+);
+
+--tabelle evalWeight
+CREATE TABLE IF NOT EXISTS evalWeight(
+    weightID INTEGER PRIMARY KEY,
+    description CHAR(50),
+    factor DECIMAL(3,2)
+);
