@@ -1,6 +1,6 @@
 <template>
   <div>
-   
+  
     <from><!--method="POST" action="index.php"-->
     <div class="container"> <h2>Was wollen Sie tun?</h2>
       <div class="input-group mb-3">

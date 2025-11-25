@@ -29,7 +29,6 @@ button {
   border-radius: 15px;
   cursor: pointer;
 }
- 
 .container {
   text-align: center;
 }

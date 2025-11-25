@@ -18,7 +18,7 @@ const items = [
 
 
 
- 
+
 <template #content>
     <head>
 
