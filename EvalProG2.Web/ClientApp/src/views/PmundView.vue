@@ -12,7 +12,7 @@ export default {
   name: 'Home'
 }
 </script>
-
+ 
 <style scoped>
 button {
   padding: 20px 40px;
