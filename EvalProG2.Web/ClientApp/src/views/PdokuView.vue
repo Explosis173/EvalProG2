@@ -2,26 +2,25 @@
 
    <template>
   <div>    <div class="container"> <h1>Dokumentation von Prüfling</h1>
-       <button type="button" class="primary">
-    <a href="newView.vue" class= "primary" download="doku.pdf">Dokumentation herunterladen</a></button>
     <button type="button" class="success">Dokumentation bewerten</button>
+       <!--<div style="display: flex; align-items: center; gap: 1rem;">
+
+                        <img class="bild" src="../test.png" alt="Dokumentation">
+                     
+                    </div>-->
     </div>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'Home'
-}
 </script>
 
 <style scoped>
 button {
   padding: 20px 40px;
-  font-size: 30px;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
+}
+.bild {
+  width: 300px;
 }
 
 .container {
@@ -36,9 +35,10 @@ button {
 
 .success {
   margin-top: 30px;
-  margin-left: 40px ;
   background-color: red;
   color: white;
+    border-radius: 20px;
+    border: 4px double #cccccc;
 }
 
 .danger {
@@ -46,4 +46,7 @@ button {
   background-color: red;
   color: white;
 }
+
+
+
 </style>

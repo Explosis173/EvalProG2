@@ -3,7 +3,7 @@
     
   </div>
   
-  <div class="container"><br><br><br><br><br><br>
+  <div class="container"><br><br>
     <h2>Was wollen Sie überprüfen?</h2><br></br>
     <router-link to="/Pdoku"><button type="button" class="PD">Projektdokumentation</button></router-link>
     <router-link to="/Pprojekt"><button type="button" class="PP">Projektpräsentation</button></router-link>
@@ -19,7 +19,7 @@ export default {
   name: 'YourComponentName'
 }
 </script>
-
+ 
 <style scoped>
   /* Basic button styling */
   button {
