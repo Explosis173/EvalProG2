@@ -20,8 +20,38 @@ const router = createRouter({
     {
       path: '/IN_Examiner',
       name: 'IN_Examiner',
-      component: ()=>import('../views/AS_Eingabe.vue')
-    }
+      component: ()=>import('../views/IN_Examiner.vue')
+    },
+    {
+      path:'/IN_Candidate',
+      name:'IN_Candidate',
+      component: ()=>import('../views/IN_candidate.vue')
+    },
+        {
+      path:'/IN_discussion',
+      name:'IN_discussion',
+      component: ()=>import('../views/IN_discussion.vue')
+    },
+        {
+      path:'/IN_EvalDocumentation',
+      name:'IN_EvalDocumentation',
+      component: ()=>import('../views/IN_EvalDocumentation.vue')
+    },
+        {
+      path:'/IN_EvalPresentation',
+      name:'IN_EvalPresentation',
+      component: ()=>import('../views/IN_EvalPresentation.vue')
+    },
+        {
+      path:'/IN_OUT_closing',
+      name:'IN_OUT_closing',
+      component: ()=>import('../views/IN_OUT_closing.vue')
+    },
+        {
+      path:'/IN_questions',
+      name:'IN_questions',
+      component: ()=>import('../views/IN_questions.vue')
+    },
   ],
 })
 
