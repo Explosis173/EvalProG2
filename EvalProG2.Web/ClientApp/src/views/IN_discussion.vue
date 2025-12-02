@@ -41,11 +41,13 @@ const titlevalue = ref(null)
             <section class="siteHeadline">
                 <div>
                     <h1 class="bold">Fragen für mündliche Prüfung, Prüfling [nummer], [name]</h1>
+                    <h4>bevor diese oberfläche sinnvoll erstellt werden kann muss erst datenbankverbindung bestehen - Astrid</h4>
                 </div>
             </section>
             <section>
-                <form class="form" id="examinerForm" v-on:submit.prevent="">
+                <form id="discussionForm" v-on:submit.prevent="">
                     <div>
+                        
                         <label class="bold" for="title">[label]: 
                             <InputText v-model="titlevalue" type="text" id="title" class="inputfield" placeholder="Titel"></InputText>
                         </label>

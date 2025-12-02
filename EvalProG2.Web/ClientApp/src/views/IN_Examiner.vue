@@ -46,23 +46,23 @@ const jobvalue = ref(null)
                 </div>
             </section>
             <section>
-                <form class="form" id="examinerForm" v-on:submit.prevent="">
-                    <div>
-                        <label class="bold" for="title">Titel des Ausschusses: 
-                            <InputText v-model="titlevalue" type="text" id="title" class="inputfield" placeholder="Titel"></InputText>
-                        </label>
+                <form id="examinerForm" v-on:submit.prevent="">
+                    <div class="form-row">
+                        <label class="bigfont bold" for="title">Titel des Ausschusses: </label>
+                        <InputText v-model="titlevalue" type="text" id="title" class="field" placeholder="Titel"></InputText>
                     </div>
-                    <div>
-                        <label class="bold" for="job">Zu bewertender Ausbildungsberuf: 
-                            <InputText v-model="jobvalue" type="text" id="job" class="inputfield" placeholder="Ausbildungsberuf"></InputText>
-                        </label>
+                    <div class="form-row">
+                        <label class="bigfont bold" for="job">Zu bewertender Ausbildungsberuf: </label> 
+                        <InputText v-model="jobvalue" type="text" id="job" class="field" placeholder="Ausbildungsberuf"></InputText>
+                        
                     </div>
-                    <div>
-                        <label class="bold" for="examDay">Datum des Ausschusses: 
-                            <DatePicker v-model="date" dateFormat="dd/mm/yyyy" id="examdate" class="inputfield" placeholder="Datum"/>
-                        </label>
+                    <div class="form-row">
+                        <label class="bigfont bold" for="examDate">Datum des Ausschusses: </label>
+                        <DatePicker v-model="date" dateFormat="dd/mm/yyyy" id="examDate" class="field" placeholder="Datum" fluid/>
                     </div>
-                    <Button type="submit" label="Anlegen" icon="pi pi-check" iconPos="right" severity="danger" raised/>
+                    <div class="submitbutton biggerfont">
+                        <Button type="submit" label="Anlegen" icon="pi pi-check" iconPos="right" severity="danger" raised/>
+                    </div>
                 </form>
             </section>
         </main>

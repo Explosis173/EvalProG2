@@ -47,7 +47,7 @@ const topicvalue = ref(null);
                 </div>
             </section>
             <section>
-                <form class="form" id="examinerForm" v-on:submit.prevent="">
+                <form id="candidateForm" v-on:submit.prevent="">
                     <div>
                         <label class="bold" for="name">Name der zu bewertenden Person: 
                             <InputText v-model="namevalue" type="text" id="name" class="inputfield" placeholder="Name, Vorname"></InputText>
