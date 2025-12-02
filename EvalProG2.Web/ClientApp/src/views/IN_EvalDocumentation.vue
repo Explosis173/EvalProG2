@@ -54,62 +54,54 @@ const customerorientedvalue = ref(null);
             </section>
             <section>
                 <form id="evalDocumentationForm" v-on:submit.prevent="">
-                    <h2>Gesamtgestaltung</h2>
-                        <div>
-                        <label class="bold" for="formal">formale Gestaltung: 
-                            <InputText v-model="formalvalue" type="text" id="formal" class="inputfield" placeholder="0 - 10 Punkte"></InputText>
-                        </label>
+                    <h2 class="bold">Gesamtgestaltung</h2>
+                        <div class="form-row">
+                            <label class="bigfont" for="formal">formale Gestaltung: </label>
+                            <InputText v-model="formalvalue" type="text" id="formal" class="field" placeholder="0 - 10 Punkte"></InputText>
                         </div>
-                        <div>
-                        <label class="bold" for="sprachlich">sprachliche Gestaltung: 
-                            <InputText v-model="langvalue" type="text" id="sprachlich" class="inputfield" placeholder="0 - 10 Punkte"></InputText>
-                        </label>
+                        <div class="form-row">
+                            <label class="bigfont" for="sprachlich">sprachliche Gestaltung: </label>
+                            <InputText v-model="langvalue" type="text" id="sprachlich" class="field" placeholder="0 - 10 Punkte"></InputText>
                         </div>
-                    <h2>Inhaltsübersicht</h2>
-                        <div>
-                        <label class="bold" for="completion">Vollständigkeit: 
-                            <InputText v-model="completionvalue" type="text" id="completion" class="inputfield" placeholder="0 - 10 Punkte"></InputText>
-                        </label>
+                    <h2 class="bold">Inhaltsübersicht</h2>
+                        <div class="form-row">
+                            <label class="bigfont" for="completion">Vollständigkeit: </label>
+                            <InputText v-model="completionvalue" type="text" id="completion" class="field" placeholder="0 - 10 Punkte"></InputText>  
                         </div>
-                    <h2>Beschreibung/ Konkretisierung des Auftrags</h2>
-                        <div>
-                            <label class="bold" for="understanding">Verständlichkeit: 
-                                <InputText v-model="understandingvalue" type="text" id="understanding" class="inputfield" placeholder="0 - 10 Punkte"></InputText>
-                            </label>
+                    <h2 class="bold">Beschreibung/ Konkretisierung des Auftrags</h2>
+                        <div class="form-row">
+                            <label class=" bigfont" for="understanding">Verständlichkeit: </label>
+                            <InputText v-model="understandingvalue" type="text" id="understanding" class="field" placeholder="0 - 10 Punkte"></InputText>
                         </div>
-                        <div>
-                            <label class="bold" for="comprehension">Nachvollziehbarkeit des Auftrags: 
-                                <InputText v-model="comprehensionvalue" type="text" id="comprehension" class="inputfield" placeholder="0 - 10 Punkte"></InputText>
-                            </label>
+                        <div class="form-row">
+                            <label class="bigfont" for="comprehension">Nachvollziehbarkeit des Auftrags: </label>
+                            <InputText v-model="comprehensionvalue" type="text" id="comprehension" class="field" placeholder="0 - 10 Punkte"></InputText>
                         </div>
-                        <div>
-                            <label class="bold" for="suitable">Angemessene Darstellung der relevanten Informationen: 
-                                <InputText v-model="suitablevalue" type="text" id="suitable" class="inputfield" placeholder="0 - 10 Punkte"></InputText>
-                            </label>
+                        <div class="form-row">
+                            <label class="bigfont" for="suitable">Angemessene Darstellung der relevanten Informationen: </label>
+                            <InputText v-model="suitablevalue" type="text" id="suitable" class="field" placeholder="0 - 10 Punkte"></InputText>
                         </div>
-                    <h2>Beschreibung der Prozessschritte und der erzielten Ergebnisse</h2>
-                        <div>
-                            <label class="bold" for="plausibility">Plausibilität der Begründung der Prozeßschritte: 
-                                <InputText v-model="plausibilityvalue" type="text" id="plausibility" class="inputfield" placeholder="0 - 10 Punkte"></InputText>
-                            </label>
+                    <h2 class="bold">Beschreibung der Prozessschritte und der erzielten Ergebnisse</h2>
+                        <div class="form-row">
+                            <label class="bigfont" for="plausibility">Plausibilität der Begründung der Prozeßschritte: </label>
+                            <InputText v-model="plausibilityvalue" type="text" id="plausibility" class="field" placeholder="0 - 10 Punkte"></InputText> 
                         </div>
-                        <div>
-                            <label class="bold" for="goalorientation">Zielorientierung der Vorgehensweise und Nachvollziehbarkeit: 
-                                <InputText v-model="goalorientationvalue" type="text" id="goalorientation" class="inputfield" placeholder="0 - 10 Punkte"></InputText>
-                            </label>
+                        <div class="form-row">
+                            <label class="bigfont" for="goalorientation">Zielorientierung der Vorgehensweise und Nachvollziehbarkeit: </label>
+                            <InputText v-model="goalorientationvalue" type="text" id="goalorientation" class="field" placeholder="0 - 10 Punkte"></InputText>
                         </div>
-                                                <div>
-                            <label class="bold" for="realistictime">Plausibilität des Zeitaufwandes für die Prozeßschritte: 
-                                <InputText v-model="realistictimevalue" type="text" id="realistictime" class="inputfield" placeholder="0 - 10 Punkte"></InputText>
-                            </label>
+                        <div class="form-row">
+                            <label class="bigfont" for="realistictime">Plausibilität des Zeitaufwandes für die Prozeßschritte: </label>
+                            <InputText v-model="realistictimevalue" type="text" id="realistictime" class="field" placeholder="0 - 10 Punkte"></InputText>
                         </div>
-                    <h2>Kundendokumentation/ Produktdokumentation</h2>
-                        <div>
-                            <label class="bold" for="customeroriented">in der Kundenorientierung dem Auftrag / Teilauftrag angemessen: 
-                                <InputText v-model="customerorientedvalue" type="text" id="customeroriented" class="inputfield" placeholder="0 - 10 Punkte"></InputText>
-                            </label>
+                    <h2 class="bold">Kundendokumentation/ Produktdokumentation</h2>
+                        <div class="form-row">
+                            <label class="bigfont" for="customeroriented">in der Kundenorientierung dem Auftrag / Teilauftrag angemessen: </label>
+                            <InputText v-model="customerorientedvalue" type="text" id="customeroriented" class="field" placeholder="0 - 10 Punkte"></InputText>
                         </div>
-                    <Button type="submit" label="Anlegen" icon="pi pi-check" iconPos="right" severity="danger" raised/>
+                        <div class="submitbutton">
+                            <Button type="submit" label="Anlegen" icon="pi pi-check" iconPos="right" severity="danger" raised/>
+                        </div>
                 </form>
             </section>
         </main>

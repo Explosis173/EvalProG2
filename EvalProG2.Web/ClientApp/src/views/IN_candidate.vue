@@ -48,27 +48,25 @@ const topicvalue = ref(null);
             </section>
             <section>
                 <form id="candidateForm" v-on:submit.prevent="">
-                    <div>
-                        <label class="bold" for="name">Name der zu bewertenden Person: 
-                            <InputText v-model="namevalue" type="text" id="name" class="inputfield" placeholder="Name, Vorname"></InputText>
-                        </label>
+                    <div class="form-row">
+                        <label class="bigfont bold" for="name">Name der zu bewertenden Person: </label>
+                        <InputText v-model="namevalue" type="text" id="name" class="field" placeholder="Name, Vorname"></InputText>
                     </div>
-                    <div>
-                        <label class="bold" for="company">Ausbildungsbetrieb: 
-                            <InputText v-model="companyvalue" type="text" id="company" class="inputfield" placeholder="Ausbildungsbetrieb"></InputText>
-                        </label>
+                    <div class="form-row">
+                        <label class="bigfont bold" for="company">Ausbildungsbetrieb: </label>
+                        <InputText v-model="companyvalue" type="text" id="company" class="field" placeholder="Ausbildungsbetrieb"></InputText>
                     </div>
-                    <div>
-                        <label class="bold" for="responsiblePerson">Ausbilder: 
-                            <InputText v-model="responsiblevalue" type="text" id="responsiblePerson" class="inputfield" placeholder="Ausbilder"></InputText>
-                        </label>
+                    <div class="form-row">
+                        <label class=" bigfont bold" for="responsiblePerson">Ausbilder: </label>
+                        <InputText v-model="responsiblevalue" type="text" id="responsiblePerson" class="field" placeholder="Ausbilder"></InputText>
                     </div>
-                    <div>
-                        <label class="bold" for="topic">Thema der Abschlussarbeit: 
-                            <InputText v-model="topicvalue" type="text" id="topic" class="inputfield" placeholder="Thema"></InputText>
-                        </label>
+                    <div class="form-row">
+                        <label class="bigfont bold" for="topic">Thema der Abschlussarbeit: </label>
+                        <InputText v-model="topicvalue" type="text" id="topic" class="field" placeholder="Thema"></InputText>
+                    </div>
+                    <div class="submitbutton">
+                        <Button type="submit" label="Anlegen" icon="pi pi-check" iconPos="right" severity="danger" raised/>
                     </div>   
-                    <Button type="submit" label="Anlegen" icon="pi pi-check" iconPos="right" severity="danger" raised/>
                 </form>
             </section>
         </main>
