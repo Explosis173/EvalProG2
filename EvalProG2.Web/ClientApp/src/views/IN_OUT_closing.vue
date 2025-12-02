@@ -38,12 +38,12 @@ const titlevalue = ref(null)
         </header>
         
         <main>
-            <section>
-                            <section class="siteHeadline">
+            <section class="siteHeadline">
                 <div>
-                    <h1 class="bold">Prüfling anlegen für Prüfungsausschuss [Titel] am [Datum]</h1>
+                    <h1 class="bold">Abschließende Bewertung von Prüfling [nummer], [name]</h1>
                 </div>
             </section>
+            <section>
                 <form class="form" id="examinerForm" v-on:submit.prevent="">
                     <div>
                         <label class="bold" for="title">[label]: 

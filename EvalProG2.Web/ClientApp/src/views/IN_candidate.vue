@@ -11,7 +11,10 @@ const items = [
   }
 ];
 
-const titlevalue = ref(null)
+const namevalue = ref(null);
+const companyvalue = ref(null);
+const responsiblevalue = ref(null);
+const topicvalue = ref(null);
 
 //---functions---
 
@@ -46,10 +49,25 @@ const titlevalue = ref(null)
             <section>
                 <form class="form" id="examinerForm" v-on:submit.prevent="">
                     <div>
-                        <label class="bold" for="title">[label]: 
-                            <InputText v-model="titlevalue" type="text" id="title" class="inputfield" placeholder="Titel"></InputText>
+                        <label class="bold" for="name">Name der zu bewertenden Person: 
+                            <InputText v-model="namevalue" type="text" id="name" class="inputfield" placeholder="Name, Vorname"></InputText>
                         </label>
                     </div>
+                    <div>
+                        <label class="bold" for="company">Ausbildungsbetrieb: 
+                            <InputText v-model="companyvalue" type="text" id="company" class="inputfield" placeholder="Ausbildungsbetrieb"></InputText>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="bold" for="responsiblePerson">Ausbilder: 
+                            <InputText v-model="responsiblevalue" type="text" id="responsiblePerson" class="inputfield" placeholder="Ausbilder"></InputText>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="bold" for="topic">Thema der Abschlussarbeit: 
+                            <InputText v-model="topicvalue" type="text" id="topic" class="inputfield" placeholder="Thema"></InputText>
+                        </label>
+                    </div>   
                     <Button type="submit" label="Anlegen" icon="pi pi-check" iconPos="right" severity="danger" raised/>
                 </form>
             </section>

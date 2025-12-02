@@ -40,6 +40,11 @@ const jobvalue = ref(null)
         </header>
         
         <main>
+            <section class="siteHeadline">
+                <div>
+                    <h1 class="bold">Neuen Prüfungsausschuss anlegen</h1>
+                </div>
+            </section>
             <section>
                 <form class="form" id="examinerForm" v-on:submit.prevent="">
                     <div>
