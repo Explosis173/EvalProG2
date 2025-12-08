@@ -11,7 +11,13 @@ const items = [
   }
 ];
 
-const titlevalue = ref(null)
+const goalorientedvalue = ref(null);
+const visualisationvalue = ref(null);
+const speechvalue = ref(null);
+const technicalvalue = ref(null);
+const termsvalue = ref(null);
+const argumentationvalue = ref(null);
+const thematicvalue = ref(null);
 
 //---functions---
 
@@ -40,17 +46,48 @@ const titlevalue = ref(null)
         <main>
             <section class="siteHeadline">
                 <div>
-                    <h1 class="bold">Bewertung der Projektpräsentation von Prüfling [nummer], [name]</h1>
+                    <h1 class="bold">Bewertung des Fachgesprächs von Prüfling [nummer], [name]</h1>
                 </div>
             </section>
             <section>
                 <form id="evalPresentationForm" v-on:submit.prevent="">
-                    <div>
-                        <label class="bold" for="title">[label]: 
-                            <InputText v-model="titlevalue" type="text" id="title" class="inputfield" placeholder="Titel"></InputText>
-                        </label>
+                    <h1>Bewertungskriterien / Präsentation</h1>
+                        <h2 class="bold">Aufbau und inhaltliche Struktur</h2>
+                            <div class="form-row">
+                                <label class="bigfont " for="goaloriented">Zielorientierung, Logik, sachliche und zeitliche Gliederung: </label>
+                                <InputText v-model="goalorientedvalue" type="text" id="goaloriented" class="field" placeholder="0 - 10 Punkte"></InputText>
+                            </div>
+                        <h2 class="bold">Präsentationstechnik</h2>
+                            <div class="form-row">
+                                <label class="bigfont " for="visualisation">Medieneinsatz, Visualisierung, Körpersprache: </label>
+                                <InputText v-model="visualisationvalue" type="text" id="visualisation" class="field" placeholder="0 - 10 Punkte"></InputText>
+                            </div>
+                        <h2 class="bold">Kommunikative Kompetenz</h2>
+                            <div class="form-row">
+                                <label class="bigfont " for="speech">Sprachstil, Ausdrucksweise, Satzbau, Überzeugungsfähigkeit: </label>
+                                <InputText v-model="speechvalue" type="text" id="speech" class="field" placeholder="0 - 10 Punkte"></InputText>
+                            </div>
+                    <h1>Bewertungskriterien / Fachgespräch</h1>
+                        <h2 class="bold">Vollständigkeit und fachliche Kompetenz</h2>
+                            <div class="form-row">
+                                <label class="bigfont" for="technical">Fachhintergrund: </label>
+                                <InputText v-model="technicalvalue" type="text" id="technical" class="field" placeholder="0 - 10 Punkte"></InputText>
+                            </div>
+                            <div class="form-row">
+                                <label class="bigfont" for="terms">Verwendung von Fachbegriffen: </label>
+                                <InputText v-model="termsvalue" type="text" id="terms" class="field" placeholder="0 - 10 Punkte"></InputText>
+                            </div>
+                            <div class="form-row">
+                                <label class="bigfont" for="argumentation">Argumentation: </label>
+                                <InputText v-model="argumentationvalue" type="text" id="argumentation" class="field" placeholder="0 - 10 Punkte"></InputText>
+                            </div>
+                            <div class="form-row">
+                                <label class="bigfont" for="thematic">thematische Durchdringung: </label>
+                                <InputText v-model="thematicvalue" type="text" id="thematic" class="field" placeholder="0 - 10 Punkte"></InputText>
+                            </div>
+                    <div class="submitbutton">
+                        <Button type="submit" label="Absenden" icon="pi pi-check" iconPos="right" severity="danger" raised/>
                     </div>
-                    <Button type="submit" label="Anlegen" icon="pi pi-check" iconPos="right" severity="danger" raised/>
                 </form>
             </section>
         </main>

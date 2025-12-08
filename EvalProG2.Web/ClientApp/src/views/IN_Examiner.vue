@@ -60,7 +60,7 @@ const jobvalue = ref(null)
                         <label class="bigfont bold" for="examDate">Datum des Ausschusses: </label>
                         <DatePicker v-model="date" dateFormat="dd/mm/yyyy" id="examDate" class="field" placeholder="Datum" fluid/>
                     </div>
-                    <div class="submitbutton biggerfont">
+                    <div class="submitbutton">
                         <Button type="submit" label="Anlegen" icon="pi pi-check" iconPos="right" severity="danger" raised/>
                     </div>
                 </form>

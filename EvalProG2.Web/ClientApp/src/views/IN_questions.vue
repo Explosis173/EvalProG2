@@ -11,7 +11,7 @@ const items = [
   }
 ];
 
-const titlevalue = ref(null)
+const questionvalue = ref(null)
 
 //---functions---
 
@@ -45,12 +45,13 @@ const titlevalue = ref(null)
             </section>
             <section>
                 <form id="questionsForm" v-on:submit.prevent="">
-                    <div>
-                        <label class="bold" for="title">[label]: 
-                            <InputText v-model="titlevalue" type="text" id="title" class="inputfield" placeholder="Titel"></InputText>
-                        </label>
+                    <div class="form-row">
+                        <label class="bigfont bold" for="question">Neue Frage: </label>
+                        <Textarea v-model="questionvalue" type="text" id="question" class="field" placeholder="Fragentext"></Textarea>
                     </div>
-                    <Button type="submit" label="Anlegen" icon="pi pi-check" iconPos="right" severity="danger" raised/>
+                    <div class ="submitbutton">
+                        <Button type="submit" label="Anlegen" icon="pi pi-check" iconPos="right" severity="danger" raised/>
+                    </div>
                 </form>
             </section>
         </main>

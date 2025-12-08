@@ -51,7 +51,7 @@ const titlevalue = ref(null)
                         <InputText v-model="titlevalue" type="text" id="title" class="field" placeholder="Titel"></InputText>                     
                     </div>
                     <div class="submitbutton">
-                        <Button type="submit" label="Anlegen" icon="pi pi-check" iconPos="right" severity="danger" raised/>
+                        <Button type="submit" label="Absenden" icon="pi pi-check" iconPos="right" severity="danger" raised/>
                     </div>                   
                 </form>
             </section>

@@ -16,6 +16,8 @@ import DatePicker from 'primevue/datepicker';
 import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
 import InputText from 'primevue/inputtext';
+import Textarea from 'primevue/textarea';
+
 
 
 
@@ -34,5 +36,6 @@ app.component('DatePicker', DatePicker);
 app.component('DataTable', DataTable);
 app.component('Column', Column);
 app.component('InputText', InputText)
+app.component('Textarea', Textarea)
 
 app.mount('#app')

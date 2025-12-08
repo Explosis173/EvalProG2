@@ -100,7 +100,7 @@ const customerorientedvalue = ref(null);
                             <InputText v-model="customerorientedvalue" type="text" id="customeroriented" class="field" placeholder="0 - 10 Punkte"></InputText>
                         </div>
                         <div class="submitbutton">
-                            <Button type="submit" label="Anlegen" icon="pi pi-check" iconPos="right" severity="danger" raised/>
+                            <Button type="submit" label="Absenden" icon="pi pi-check" iconPos="right" severity="danger" raised/>
                         </div>
                 </form>
             </section>
