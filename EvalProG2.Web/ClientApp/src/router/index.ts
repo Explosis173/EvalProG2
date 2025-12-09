@@ -28,8 +28,8 @@ const router = createRouter({
       component: ()=>import('../views/IN_candidate.vue')
     },
         {
-      path:'/IN_discussion',
-      name:'IN_discussion',
+      path:'/IN_Discussion',
+      name:'IN_Discussion',
       component: ()=>import('../views/IN_discussion.vue')
     },
         {
@@ -48,8 +48,8 @@ const router = createRouter({
       component: ()=>import('../views/IN_OUT_closing.vue')
     },
         {
-      path:'/IN_questions',
-      name:'IN_questions',
+      path:'/IN_Questions',
+      name:'IN_Questions',
       component: ()=>import('../views/IN_questions.vue')
     },
   ],

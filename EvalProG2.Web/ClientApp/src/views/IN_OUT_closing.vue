@@ -11,7 +11,7 @@ const items = [
   }
 ];
 
-const titlevalue = ref(null)
+const closingRemarkvalue = ref(null)
 
 //---functions---
 
@@ -45,12 +45,30 @@ const titlevalue = ref(null)
             </section>
             <section>
                 <form id="closingForm" v-on:submit.prevent="">
-                    <div>
-                        <label class="bold" for="title">[label]: 
-                            <InputText v-model="titlevalue" type="text" id="title" class="inputfield" placeholder="Titel"></InputText>
-                        </label>
+                    <div class="form-row">
+                        <label class="big font bold" for="AP1">Bewertung AP 1: </label>
+                        <Text class="field">0 - 100 Punkte</Text>
                     </div>
-                    <Button type="submit" label="Anlegen" icon="pi pi-check" iconPos="right" severity="danger" raised/>
+                    <div class="form-row">
+                        <label class="big font bold" for="AP2">Bewertung AP 2: </label>
+                        <Text class="field">0 - 100 Punkte</Text>
+                    </div>
+                    <div class="form-row">
+                        <label class="big font bold" for="project">Bewertung Projektarbeit: </label>
+                        <Text class="field">0 - 100 Punkte</Text>
+                    </div>
+                    <div class="form-row">
+                        <label class="big font bold" for="presentation">Bewertung Präsentation und Fachgespräch: </label>
+                        <Text class="field">0 - 100 Punkte</Text>
+                    </div>
+                    <h2 class="bold">Abschließende Bemerkung</h2>
+                        <div class="form-row">
+                        <Textarea v-model="closingRemarkvalue" type="text" id="closingRemark" class="field" placeholder="Kommentar"></Textarea>
+                        </div>                                                            
+                    <div class="submitbutton">
+                        <Button type="submit" label="Berechnung der Endnote beginnen" icon="pi pi-check" iconPos="right" severity="danger" raised/>
+                    </div>
+                    
                 </form>
             </section>
         </main>
