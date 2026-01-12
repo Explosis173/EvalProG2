@@ -1,6 +1,5 @@
 <template>
         <div class="container">
-<!---->
       <router-link to="/pruefen">
         <button class="primary">Prüflinge Überprüfen</button>
       </router-link>

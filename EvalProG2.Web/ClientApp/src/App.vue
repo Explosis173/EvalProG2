@@ -18,12 +18,10 @@ const items = [
 
 
 
-
 <template #content>
     <head>
 
     </head>
-    <body>
         <header>
             <DataTable :value="items">
                 <Column>
@@ -42,11 +40,9 @@ const items = [
        <!-- <footer>
             <section>Impressum goes here</section>
         </footer>-->
-    </body>
+<br><br><br>
   <RouterView />
 </template>
-
-
 
 
 <style scoped>
@@ -110,7 +106,6 @@ nav {
 nav a.router-link-exact-active {
   color: var(--color-text);
 }
-
 nav a.router-link-exact-active:hover {
   background-color: transparent;
 }
@@ -151,4 +146,6 @@ nav a:first-of-type {
     margin-top: 1rem;
   }
 }
+
+
 </style>
