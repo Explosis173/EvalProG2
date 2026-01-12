@@ -16,3 +16,5 @@
 /Users/niklas/RiderProjects/EvalProG2/EvalProG2.Infrastructure/obj/Debug/net8.0/refint/EvalProG2.Infrastructure.dll
 /Users/niklas/RiderProjects/EvalProG2/EvalProG2.Infrastructure/obj/Debug/net8.0/EvalProG2.Infrastructure.pdb
 /Users/niklas/RiderProjects/EvalProG2/EvalProG2.Infrastructure/obj/Debug/net8.0/ref/EvalProG2.Infrastructure.dll
+/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Infrastructure/bin/Debug/net8.0/EvalProG2.Infrastructure.runtimeconfig.json
+/Users/niklas/RiderProjects/EvalProG2/EvalProG2.Infrastructure/obj/Debug/net8.0/EvalProG2.Infrastructure.genruntimeconfig.cache

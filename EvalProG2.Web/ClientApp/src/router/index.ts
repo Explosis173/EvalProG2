@@ -57,6 +57,11 @@ const router = createRouter({
       name: 'Pmund',
       component: () => import('../views/PmundView.vue'),
     },
+    {
+      path: '/IN_Examiner',
+      name: 'IN_Examiner',
+      component: ()=>import('../views/AS_Eingabe.vue')
+    }
   ],
 })
 
