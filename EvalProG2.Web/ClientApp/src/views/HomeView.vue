@@ -8,8 +8,12 @@
         <button class="danger">Prüfling bewerten</button>
       </router-link>
       <br>
-      <router-link to="/new">
+      <router-link to="/IN_candidate">
         <button class="success">Prüfling hinzufügen</button>
+      </router-link>
+      <br>
+            <router-link to="/IN_examiner">
+        <button class="success">Prüfungsauschuss hinzufügen</button>
       </router-link>
   </div>
 </template>

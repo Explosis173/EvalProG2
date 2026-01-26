@@ -4,10 +4,8 @@
     "\\EvalProG2.Web",
     "\\EvalProG2.Web\\ClientApp",
     "\\EvalProG2.Web\\ClientApp\\src",
-    "\\EvalProG2.Web\\ClientApp\\src\\router",
-    "\\EvalProG2.Web\\ClientApp\\src\\stores",
+    "\\EvalProG2.Web\\ClientApp\\src\\assets",
     "\\EvalProG2.Web\\ClientApp\\src\\views"
   ],
-  "SelectedNode": "\\EvalProG2.Application",
   "PreviewInSolutionExplorer": false
 }

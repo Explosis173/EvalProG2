@@ -5,11 +5,10 @@
   
   <div class="container"><br><br>
     <h2>Was wollen Sie überprüfen?</h2><br></br>
-    <router-link to="/Pdoku"><button type="button" class="PD">Projektdokumentation</button></router-link>
-    <router-link to="/Pprojekt"><button type="button" class="PP">Projektpräsentation</button></router-link>
-    <router-link to="/Pfach"><button type="button" class="FG">Fachgespräch</button></router-link><br><br><br><br> 
-    <router-link to="/Pges"><button type="button" class="GE">Gesamtergebnis</button></router-link>
-    <router-link to="/Pmund"><button type="button" class="MP">Mündliche Prüfung</button></router-link><br><br><br><br>
+    <router-link to="/IN_EvalDocumentation"><button type="button" class="PD">Projekt</button></router-link>
+    <router-link to="/IN_EvalPresentation"><button type="button" class="FG">Fachgespräch</button></router-link><br><br><br><br> 
+    <router-link to="/IN_OUT_closing"><button type="button" class="GE">Gesamtergebnis</button></router-link>
+    <router-link to="/IN_discussion"><button type="button" class="MP">Mündliche Prüfung</button></router-link><br><br><br><br>
     <router-link to="/"><button type="button" class="back">Zurück</button></router-link>
   </div>
 </template>

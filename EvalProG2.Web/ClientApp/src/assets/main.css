@@ -1,11 +1,13 @@
-/* @import './base.css';
+@import './base.css';
 
+/*
 #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
 }
+
 
 a,
 .green {
@@ -26,6 +28,7 @@ a,
     display: flex;
     place-items: center;
   }
+
 
   #app {
     display: grid;

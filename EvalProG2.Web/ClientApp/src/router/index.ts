@@ -22,46 +22,57 @@ const router = createRouter({
       name: 'edit',
       component: () => import('../views/editView.vue'),
     },
-        {
-      path: '/new',
-      name: 'new',
-      component: () => import('../views/newView.vue'),
-    },
        {
       path: '/pruefen',
       name: 'pruefen',
       component: () => import('../views/pruefenView.vue'),
     },
        {
-      path: '/Pdoku',
-      name: 'Pdoku',
-      component: () => import('../views/PdokuView.vue'),
-    },
-       {
       path: '/Pprojekt',
       name: 'Pprojekt',
       component: () => import('../views/PprojektView.vue'),
     },
-       {
-      path: '/Pfach',
-      name: 'Pfach',
-      component: () => import('../views/PfachView.vue'),
-    },
+    
        {
       path: '/Pges',
       name: 'Pges',
       component: () => import('../views/PgesView.vue'),
     },
-       {
-      path: '/Pmund',
-      name: 'Pmund',
-      component: () => import('../views/PmundView.vue'),
-    },
     {
       path: '/IN_Examiner',
       name: 'IN_Examiner',
-      component: ()=>import('../views/AS_Eingabe.vue')
-    }
+      component: ()=>import('../views/IN_Examiner.vue')
+    },
+    {
+      path:'/IN_Candidate',
+      name:'IN_Candidate',
+      component: ()=>import('../views/IN_candidate.vue')
+    },
+        {
+      path:'/IN_Discussion',
+      name:'IN_Discussion',
+      component: ()=>import('../views/IN_discussion.vue')
+    },
+        {
+      path:'/IN_EvalDocumentation',
+      name:'IN_EvalDocumentation',
+      component: ()=>import('../views/IN_EvalDocumentation.vue')
+    },
+        {
+      path:'/IN_EvalPresentation',
+      name:'IN_EvalPresentation',
+      component: ()=>import('../views/IN_EvalPresentation.vue')
+    },
+        {
+      path:'/IN_OUT_closing',
+      name:'IN_OUT_closing',
+      component: ()=>import('../views/IN_OUT_closing.vue')
+    },
+        {
+      path:'/IN_Questions',
+      name:'IN_Questions',
+      component: ()=>import('../views/IN_questions.vue')
+    },
   ],
 })
 
