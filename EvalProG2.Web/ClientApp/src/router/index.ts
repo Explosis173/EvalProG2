@@ -22,22 +22,7 @@ const router = createRouter({
       name: 'edit',
       component: () => import('../views/editView.vue'),
     },
-       {
-      path: '/pruefen',
-      name: 'pruefen',
-      component: () => import('../views/pruefenView.vue'),
-    },
-       {
-      path: '/Pprojekt',
-      name: 'Pprojekt',
-      component: () => import('../views/PprojektView.vue'),
-    },
-    
-       {
-      path: '/Pges',
-      name: 'Pges',
-      component: () => import('../views/PgesView.vue'),
-    },
+   
     {
       path: '/IN_Examiner',
       name: 'IN_Examiner',
