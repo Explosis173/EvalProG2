@@ -11,7 +11,7 @@
 
 <template>
         <div class="container">
-      <router-link to="/pruefen">
+      <router-link to="/OUT_admin">
         <button class="primary">Prüflinge Überprüfen</button>
       </router-link>
       <br>

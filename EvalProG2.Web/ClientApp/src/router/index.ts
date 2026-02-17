@@ -14,6 +14,26 @@ const router = createRouter({
       component: () => import('../views/editView.vue'),
     },
     {
+      path: '/OUT_admin',
+      name: 'OUT_admin',
+      component: () => import('../views/OUT_admin.vue')
+    },
+    {
+      path: '/OUT_Discussion',
+      name: 'OUT_Discussion',
+      component: () => import('../views/OUT_Discussion.vue')
+    },
+    {
+      path: '/OUT_EvalDocumentation',
+      name: 'OUT_EvalDocumentation',
+      component: () => import('../views/OUT_EvalDocumentation.vue')
+    },
+    {
+      path: '/OUT_EvalPresentation',
+      name: 'OUT_EvalPresentation',
+      component: () => import('../views/OUT_EvalPresentation.vue')
+    },
+    {
       path: '/examiner',
       name: 'IN_Examiner',
       component: ()=>import('../views/IN_Examiner.vue')

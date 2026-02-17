@@ -118,6 +118,15 @@ body {
         margin-top: 2rem;
     }
 
+    h2{
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start; 
+        align-items: center;
+        flex: 1;
+        color: red;
+    }
+
 /*--- css for classes ---*/
     .banner{
         display: flex; 
@@ -158,21 +167,36 @@ body {
     }
 
     .form-row label{
-        flex: 0 0 40%;
+        flex: 0 0 50%;
         text-align: left;
     }
 
     .form-row .field{
-        flex: 1 1 auto;
+        flex: 1 1 50%;
         display: flex;
+        flex-wrap: nowrap;
         justify-content: flex-end;
         margin: 10px;
+    }
+
+    .form-row .dropdown{
+      flex: 1 1 50%;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      margin: 10px
     }
 
     .submitbutton{
         display: flex;
         justify-content: center;
         margin: 10px;
+    }
+
+    .showMeButton{
+      display: flex;
+      justify-content: center;
+      margin: 0.25rem
     }
 
 

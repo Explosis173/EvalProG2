@@ -16,6 +16,7 @@ import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
 import InputText from 'primevue/inputtext';
 import Textarea from 'primevue/textarea';
+import Select from 'primevue/select';
 
 const app = createApp(App);
 app.use(PrimeVue, {
@@ -31,7 +32,8 @@ app.component('Button', Button);
 app.component('DatePicker', DatePicker);
 app.component('DataTable', DataTable);
 app.component('Column', Column);
-app.component('InputText', InputText)
-app.component('Textarea', Textarea)
+app.component('InputText', InputText);
+app.component('Textarea', Textarea);
+app.component('Select', Select);
 
-app.mount('#app')
+app.mount('#app');

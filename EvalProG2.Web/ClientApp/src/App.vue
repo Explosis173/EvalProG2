@@ -4,7 +4,6 @@
 
 import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
-import Button from 'primevue/button';
 import './assets/base.css'
 
 const items = [
@@ -23,17 +22,17 @@ const items = [
 
     </head>
         <header>
-            <DataTable :value="items" class="banner">
+            <DataTable :value="items">
                 <Column>
-                <template #body="slotProps">
-                    <div style="display: flex; align-items: center; gap: 1rem;">
-                        <img src="../stadt-regensburg.png" alt="Logo der Stadt Regensburg" class="rgb_logo"/>
-                        <div>
-                            <h1 class="bold">{{ slotProps.data.title }}</h1>
-                            <h2 class="italics">{{ slotProps.data.subtitle }}</h2>
-                        </div>
+                  <template #body="slotProps">
+                    <div class="banner">
+                      <img src="../stadt-regensburg.png" alt="Logo der Stadt Regensburg" class="rgb_logo"/>
+                      <div>
+                        <h1 class="bold">{{ slotProps.data.title }}</h1>
+                        <h2 class="italics">{{ slotProps.data.subtitle }}</h2>
+                      </div>
                     </div>
-                </template>
+                  </template>
                 </Column>
             </DataTable>
         </header>

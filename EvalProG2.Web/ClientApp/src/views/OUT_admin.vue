@@ -1,0 +1,77 @@
+<script setup lang="ts">
+    //---imports---
+    import { ref } from 'vue';
+
+    //---variables---
+    
+    const selectedExaminer = ref(null);
+    const selectedCandidate = ref(null);
+    const cities = ref([
+        { name: 'New York', code: 'NY' },
+        { name: 'Rome', code: 'RM' },
+        { name: 'London', code: 'LDN' },
+        { name: 'Istanbul', code: 'IST' },
+        { name: 'Paris', code: 'PRS' }
+    ]);
+
+    //---functions---
+
+</script>
+
+
+<!--main code-->
+<template #content>
+    <div class="page">
+        <header>
+
+        </header>
+        
+        <main>
+            <section class="siteHeadline">
+                <div>
+                    <h1 class="bold">Auswahl der anzuzeigenden Daten</h1>
+                </div>
+            </section>
+            <section>
+                <div class="form-row">
+                    <h2 class="bold">Datengrundlage</h2>
+                </div>
+                <div class="form-row">
+                    <label class="bigfont bold" for="name">Prüfungsausschuss: </label>
+                    <Select v-model="selectedExaminer" :options="cities" optionLabel="name" placeholder="Prüfungsausschuss wählen" class="dropdown" />
+                </div> 
+                <div class="form-row">
+                    <label class="bigfont bold" for="name">Prüfling: </label>
+                    <Select v-model="selectedCandidate" :options="cities" optionLabel="name" placeholder="Prüfling wählen" class="dropdown" />
+                </div>
+            </section>
+            <br>
+            <section>
+                <div class="form-row">
+                    <h2 class="bold">Anzeigemöglichkeiten</h2>
+                </div>
+                <div class="submitbutton">
+                    <router-link to="/OUT_EvalDocumentation">
+                    <Button label="Dokumentationsbewertung" class="showMeButton" icon="pi pi-book" iconPos="left" severity="danger" raised/>
+                    </router-link>
+                    <router-link to="/OUT_EvalPresentation">
+                    <Button label="Präsentationsbewertung" class="showMeButton" icon="pi pi-image" iconPos="left" severity="danger" raised/>
+                    </router-link>
+                    <router-link to="/OUT_Discussion">
+                    <Button label="Projektverteidugung" class="showMeButton" icon="pi pi-user" iconPos="left" severity="danger" raised/>
+                    </router-link>
+                </div>
+                <div class="submitbutton">
+                    <router-link to="/closingremarks">
+                    <Button label="Gesamtergebnis" class="showMe" severity="danger" raised/>
+                    </router-link>
+                </div>  
+            
+            </section>
+        </main>
+
+        <footer>
+            <!--<section>Impressum goes here</section>-->
+        </footer>
+    </div>
+</template>
