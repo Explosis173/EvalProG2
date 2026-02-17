@@ -1,3 +1,19 @@
+<script setup lang="ts">
+//---imports---
+
+//---variables---
+const items = [
+  {
+    image: 'stadt-regensburg.png',
+    title: 'EvalPro',
+    subtitle: 'Das professionelle Bewertungstool für die mündliche IHK-Prüfung'
+  }
+];
+
+//---functions---
+
+</script>
+
 <template>
   <div class="container2">
     
@@ -12,12 +28,6 @@
     <router-link to="/"><button type="button" class="back">Zurück</button></router-link>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'YourComponentName'
-}
-</script>
  
 <style scoped>
   /* Basic button styling */
