@@ -33,21 +33,27 @@
                 </div>
             </section>
             <section>
-                <div class="form-row">
+                <div class="show-row">
                     <h2 class="bold">Datengrundlage</h2>
                 </div>
-                <div class="form-row">
+                <div class="show-row">
                     <label class="bigfont bold" for="name">Prüfungsausschuss: </label>
                     <Select v-model="selectedExaminer" :options="cities" optionLabel="name" placeholder="Prüfungsausschuss wählen" class="dropdown" />
+                    <router-link to="/OUT_Examiner">
+                        <Button label="Bearbeiten" class="doButton" label:edit icon="pi pi-pen-to-square" iconPos="right" severity="danger" raised/>
+                    </router-link>
                 </div> 
-                <div class="form-row">
+                <div class="show-row">
                     <label class="bigfont bold" for="name">Prüfling: </label>
                     <Select v-model="selectedCandidate" :options="cities" optionLabel="name" placeholder="Prüfling wählen" class="dropdown" />
+                    <router-link to="/OUT_candidate">
+                        <Button label="Bearbeiten" class="doButton" icon="pi pi-pen-to-square" iconPos="right" severity="danger" raised/>
+                    </router-link>
                 </div>
             </section>
             <br>
             <section>
-                <div class="form-row">
+                <div class="show-row">
                     <h2 class="bold">Anzeigemöglichkeiten</h2>
                 </div>
                 <div class="submitbutton">

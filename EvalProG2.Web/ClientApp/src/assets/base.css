@@ -165,7 +165,6 @@ body {
         gap: 1rem;
         border-bottom: 1px lightgray solid;
     }
-
     .form-row label{
         flex: 0 0 50%;
         text-align: left;
@@ -179,12 +178,37 @@ body {
         margin: 10px;
     }
 
-    .form-row .dropdown{
-      flex: 1 1 50%;
+    .show-row{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        border-bottom: 1px lightgray solid;
+    }
+    .show-row label{
+        flex: 1 1 auto;
+        text-align: left;
+    }
+
+    .show-row .dropdown{
+      flex: 0 0 auto;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      margin: 10px
+    }
+
+    .show-row .doButton{
+      flex: 0 0 auto;
       display: flex;
       flex-wrap: nowrap;
       justify-content: flex-end;
       margin: 10px
+    }
+
+    .doButton{
+      display: flex;
+      justify-content: center;
+      margin: 10px;
     }
 
     .submitbutton{

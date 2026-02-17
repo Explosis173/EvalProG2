@@ -19,6 +19,16 @@ const router = createRouter({
       component: () => import('../views/OUT_admin.vue')
     },
     {
+      path: '/OUT_candidate',
+      name: 'OUT_candidate',
+      component: () => import('../views/OUT_candidate.vue')
+    },
+    {
+      path: '/OUT_Examiner',
+      name: 'OUT_Examiner',
+      component: () => import('../views/OUT_Examiner.vue')
+    },
+    {
       path: '/OUT_Discussion',
       name: 'OUT_Discussion',
       component: () => import('../views/OUT_Discussion.vue')
