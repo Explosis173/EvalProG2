@@ -37,7 +37,7 @@ const customerdoccommentvalue = ref(null);
 <template #content>
     <div class="page">
         <header>
-            <DataTable :value="items">
+            <!--<DataTable :value="items">
                 <Column>
                     <template #body="slotProps">
                         <div class="banner">
@@ -49,7 +49,7 @@ const customerdoccommentvalue = ref(null);
                         </div>
                     </template>
                 </Column>
-            </DataTable>
+            </DataTable>-->
         </header>
         
         <main>
@@ -129,7 +129,7 @@ const customerdoccommentvalue = ref(null);
         </main>
 
         <footer>
-            <section>Impressum goes here</section>
+            <!--<section>Impressum goes here</section>-->
         </footer>
     </div>
 </template>

@@ -26,7 +26,7 @@ const items = [
             <DataTable :value="items">
                 <Column>
                 <template #body="slotProps">
-                    <div style="display: flex; align-items: center; gap: 1rem;">
+                    <div style="display: flex; align-items: center; gap: 1 rem;">
                         <img src="../stadt-regensburg.png" alt="Logo der Stadt Regensburg" class="rgb_logo"/>
                         <div>
                             <h1 class="bold">{{ slotProps.data.title }}</h1>
@@ -65,7 +65,7 @@ header{
     }
 
     .rgb_logo{
-        width: 20%;
+        width: 10%;
         height: auto;
         padding: 0.5cm;
     }
