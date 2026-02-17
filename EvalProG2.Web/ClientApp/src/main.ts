@@ -7,8 +7,8 @@ import { createApp } from 'vue'
 import App from './App.vue'
 
 import PrimeVue from 'primevue/config';
-//import  Aura from '@primevue/themes/aura'
-// import 'primeicons/primeicons.css';
+import  Aura from '@primevue/themes/aura'
+import 'primeicons/primeicons.css';
 
 import Button from 'primevue/button';
 import DatePicker from 'primevue/datepicker';
@@ -17,13 +17,10 @@ import Column from 'primevue/column';
 import InputText from 'primevue/inputtext';
 import Textarea from 'primevue/textarea';
 
-
-
-
 const app = createApp(App);
 app.use(PrimeVue, {
     theme: {
-       // preset: Aura
+       preset: Aura
     },
     ripple: true,
 });
