@@ -2,13 +2,6 @@
 //---imports---
 
 //---variables---
-const items = [
-  {
-    image: 'stadt-regensburg.png',
-    title: 'EvalPro',
-    subtitle: 'Das professionelle Bewertungstool für die mündliche IHK-Prüfung'
-  }
-];
 
 //---functions---
 
@@ -21,14 +14,15 @@ const items = [
   
   <div class="container"><br><br>
     <h2>Was wollen Sie überprüfen?</h2><br></br>
-    <router-link to="/IN_EvalDocumentation"><button type="button" class="PD">Projekt</button></router-link>
-    <router-link to="/IN_EvalPresentation"><button type="button" class="FG">Fachgespräch</button></router-link><br><br><br><br> 
-    <router-link to="/IN_OUT_closing"><button type="button" class="GE">Gesamtergebnis</button></router-link>
-    <router-link to="/IN_discussion"><button type="button" class="MP">Mündliche Prüfung</button></router-link><br><br><br><br>
+    <router-link to="/eval_doc"><button type="button" class="PD">Projekt</button></router-link>
+    <router-link to="/eval_pres"><button type="button" class="FG">Fachgespräch</button></router-link><br><br><br><br> 
+    <router-link to="/closingremarks"><button type="button" class="GE">Gesamtergebnis</button></router-link>
+    <router-link to="/discussion"><button type="button" class="MP">Mündliche Prüfung</button></router-link><br><br><br><br>
     <router-link to="/"><button type="button" class="back">Zurück</button></router-link>
   </div>
 </template>
  
+<!--
 <style scoped>
   /* Basic button styling */
   button {
@@ -92,3 +86,4 @@ const items = [
     border: 4px double #cccccc;
   }
 </style>
+-->

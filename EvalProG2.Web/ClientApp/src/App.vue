@@ -5,7 +5,7 @@
 import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
 import Button from 'primevue/button';
-
+import './assets/base.css'
 
 const items = [
   {
@@ -23,10 +23,10 @@ const items = [
 
     </head>
         <header>
-            <DataTable :value="items">
+            <DataTable :value="items" class="banner">
                 <Column>
                 <template #body="slotProps">
-                    <div style="display: flex; align-items: center; gap: 1 rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem;">
                         <img src="../stadt-regensburg.png" alt="Logo der Stadt Regensburg" class="rgb_logo"/>
                         <div>
                             <h1 class="bold">{{ slotProps.data.title }}</h1>
@@ -40,11 +40,10 @@ const items = [
        <!-- <footer>
             <section>Impressum goes here</section>
         </footer>-->
-<br><br><br>
   <RouterView />
 </template>
 
-
+<!--
 <style scoped>
 header{
         display: flex;
@@ -149,3 +148,4 @@ nav a:first-of-type {
 
 
 </style>
+-->

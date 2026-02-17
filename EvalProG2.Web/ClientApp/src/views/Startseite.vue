@@ -1,14 +1,9 @@
 <script setup lang="ts">
 //---imports---
 
+
 //---variables---
-const items = [
-  {
-    image: 'stadt-regensburg.png',
-    title: 'EvalPro',
-    subtitle: 'Das professionelle Bewertungstool für die mündliche IHK-Prüfung'
-  }
-];
+
 
 //---functions---
 
@@ -24,11 +19,11 @@ const items = [
         <button class="danger">Prüfling bewerten</button>
       </router-link>
       <br>
-      <router-link to="/IN_candidate">
+      <router-link to="/candidate">
         <button class="success">Prüfling hinzufügen</button>
       </router-link>
       <br>
-            <router-link to="/IN_examiner">
+            <router-link to="/examiner">
         <button class="success">Prüfungsauschuss hinzufügen</button>
       </router-link>
   </div>

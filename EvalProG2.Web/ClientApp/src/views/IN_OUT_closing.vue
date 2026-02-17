@@ -3,14 +3,6 @@
 import { ref } from 'vue';
 
 //---variables---
-const items = [
-  {
-    image: 'stadt-regensburg.png',
-    title: 'EvalPro',
-    subtitle: 'Das professionelle Bewertungstool für die mündliche IHK-Prüfung'
-  }
-];
-
 const closingRemarkvalue = ref(null)
 
 //---functions---

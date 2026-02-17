@@ -1,22 +1,14 @@
 <script setup lang="ts">
-//---imports---
-import { ref } from 'vue';
+    //---imports---
+    import { ref } from 'vue';
 
-//---variables---
-const items = [
-  {
-    image: 'stadt-regensburg.png',
-    title: 'EvalPro',
-    subtitle: 'Das professionelle Bewertungstool für die mündliche IHK-Prüfung'
-  }
-];
+    //---variables---
+    const namevalue = ref(null);
+    const companyvalue = ref(null);
+    const responsiblevalue = ref(null);
+    const topicvalue = ref(null);
 
-const namevalue = ref(null);
-const companyvalue = ref(null);
-const responsiblevalue = ref(null);
-const topicvalue = ref(null);
-
-//---functions---
+    //---functions---
 
 </script>
 
