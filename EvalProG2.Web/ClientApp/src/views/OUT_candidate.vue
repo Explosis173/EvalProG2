@@ -54,11 +54,15 @@
                     </div>
                     <div class="form-row">
                         <label class="bigfont bold" for="topic">Thema der Abschlussarbeit: </label>
-                        <InputText v-model="topicvalue" type="text" id="topic" class="field" placeholder="TDatenbankwerta" :disabled="true"></InputText>
+                        <InputText v-model="topicvalue" type="text" id="topic" class="field" placeholder="Datenbankwert" :disabled="true"></InputText>
                     </div>
-                    <div class="submitbutton">
-                        <Button type="submit" label="Anlegen" icon="pi pi-check" iconPos="right" severity="danger" raised/>
+                    <div class="doButton">
+                        <Button label="Bearbeiten" class="doButton" icon="pi pi-pen-to-square" iconPos="right" severity="danger" raised/>
                     </div>   
+                    <div class="form-row doButton">
+                        <Button type="submit" label="Speichern" icon="pi pi-check" iconPos="right" severity="success" raised/>
+                        <Button type="submit" label="Verwerfen" icon="pi pi-times" iconPos="right" severity="danger" raised/>
+                    </div> 
                 </form>
             </section>
         </main>
