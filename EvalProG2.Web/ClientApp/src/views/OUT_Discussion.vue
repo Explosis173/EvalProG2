@@ -4,8 +4,26 @@ import { ref } from 'vue';
 
 //---variables---
 
-//---functions---
 
+const isDisabled = ref(true); // felder werden nicht mehr eingebbar
+const appear = ref(false); // Buttons erscheinen
+
+//---functions---
+const enableEditing = () => {
+    isDisabled.value = false;
+    appear.value = true;
+};
+
+
+const save = () => {
+    isDisabled.value = true;
+    appear.value = false;
+};
+
+const cancel = () => {
+    isDisabled.value = true;
+    appear.value = false;
+};
 </script>
 
 
@@ -41,9 +59,32 @@ import { ref } from 'vue';
                         <label class="bigfont bold" for="title">[label]: </label>
                         <Text class="field">bevor hier was sinnvolles stehen kann muss datenbankverbindung bestehen</Text>                    
                     </div>
-                    <div class="submitbutton">
+                    <!-- <div class="submitbutton">
                         <Button type="submit" label="Absenden" icon="pi pi-check" iconPos="right" severity="danger" raised/>
-                    </div>                   
+                    </div>        -->
+                      <div class="doButton">
+
+                    <router-link to="./OUT_admin">
+                    <Button label="Zurück" class="doButton" severity="danger" raised/>
+                    </router-link>
+                    
+                        <Button label="Bearbeiten"
+                                class="doButton"
+                                icon="pi pi-pen-to-square"
+                                iconPos="right"
+                                severity="danger"
+                                raised
+                                @click="enableEditing" />
+                    
+
+                        </div>
+                    <div class="form-row doButton">
+                        <Button type="submit" label="Speichern" icon="pi pi-check" iconPos="right"
+                                severity="success" v-show="appear" raised @click="save" />
+                        <Button type="submit" label="Verwerfen" icon="pi pi-times" iconPos="right"
+                                severity="danger" v-show="appear" raised @click="cancel"/>
+                    </div>
+                               
                 </form>
             </section>
         </main>

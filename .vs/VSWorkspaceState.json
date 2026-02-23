@@ -7,6 +7,6 @@
     "\\EvalProG2.Web\\ClientApp\\src\\router",
     "\\EvalProG2.Web\\ClientApp\\src\\views"
   ],
-  "SelectedNode": "\\EvalProG2.Web\\ClientApp\\src\\App.vue",
+  "SelectedNode": "\\EvalProG2.Web\\ClientApp\\src\\router\\index.ts",
   "PreviewInSolutionExplorer": false
 }
