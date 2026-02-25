@@ -68,14 +68,17 @@
                     </router-link>
                 </div>
                 <div class="submitbutton">
-                    <router-link to="./">
-                    <Button label="Zurück" class="showMeButton" severity="danger" raised/>
-                    </router-link>
+
                     <router-link to="/closingremarks">
-                    <Button label="Gesamtergebnis" class="showMeButton" severity="danger" raised/>
+                    <Button label="Gesamtergebnis" class="showMe" severity="danger" raised/>
                     </router-link>
-                </div>  
-            
+                </div>
+               <div class="submitbutton">
+              
+                    <router-link to="./">
+                    <Button label="Zurück" class="showMe" severity="danger" raised/>
+                    </router-link>
+            </div>
             </section>
         </main>
 
